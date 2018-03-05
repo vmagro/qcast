@@ -1,0 +1,11 @@
+go_library(
+  name='mouse',
+  package_name='golang.org/x/mobile/event/mouse',
+  srcs=[
+    'mouse.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/event/key:key',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,11 @@
+go_library(
+  name='mediamath',
+  package_name='golang.org/x/oauth2/mediamath',
+  srcs=[
+    'mediamath.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+  visibility=['PUBLIC'],
+)

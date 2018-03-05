@@ -1,0 +1,17 @@
+go_library(
+  name='plural',
+  package_name='golang.org/x/text/feature/plural',
+  srcs=[
+    'common.go',
+    'message.go',
+    'plural.go',
+    'tables.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal/catmsg:catmsg',
+    '//third_party/go/src/golang.org/x/text/internal/number:number',
+    '//third_party/go/src/golang.org/x/text/language:language',
+    '//third_party/go/src/golang.org/x/text/message/catalog:catalog',
+  ],
+  visibility=['PUBLIC'],
+)

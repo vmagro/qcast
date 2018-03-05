@@ -1,0 +1,17 @@
+go_library(
+  name='testapp',
+  package_name='golang.org/x/mobile/app/internal/testapp',
+  srcs=[
+    'testapp.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/app:app',
+    '//third_party/go/src/golang.org/x/mobile/app/internal/apptest:apptest',
+    '//third_party/go/src/golang.org/x/mobile/event/lifecycle:lifecycle',
+    '//third_party/go/src/golang.org/x/mobile/event/paint:paint',
+    '//third_party/go/src/golang.org/x/mobile/event/size:size',
+    '//third_party/go/src/golang.org/x/mobile/event/touch:touch',
+    '//third_party/go/src/golang.org/x/mobile/gl:gl',
+  ],
+  visibility=['PUBLIC'],
+)

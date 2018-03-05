@@ -1,0 +1,11 @@
+go_library(
+  name='descriptor',
+  package_name='github.com/golang/protobuf/protoc-gen-go/descriptor',
+  srcs=[
+    'descriptor.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

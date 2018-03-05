@@ -1,0 +1,12 @@
+go_library(
+  name='runes',
+  package_name='golang.org/x/text/runes',
+  srcs=[
+    'cond.go',
+    'runes.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+  ],
+  visibility=['PUBLIC'],
+)

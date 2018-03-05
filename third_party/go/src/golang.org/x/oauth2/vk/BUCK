@@ -1,0 +1,11 @@
+go_library(
+  name='vk',
+  package_name='golang.org/x/oauth2/vk',
+  srcs=[
+    'vk.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+  visibility=['PUBLIC'],
+)

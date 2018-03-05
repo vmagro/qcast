@@ -1,0 +1,14 @@
+go_library(
+  name='mock_routeguide',
+  package_name='google.golang.org/grpc/examples/route_guide/mock_routeguide',
+  srcs=[
+    'rg_mock.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+    '//third_party/go/src/google.golang.org/grpc/examples/route_guide/routeguide:routeguide',
+    '//third_party/go/src/google.golang.org/grpc/metadata:metadata',
+  ],
+  visibility=['PUBLIC'],
+)

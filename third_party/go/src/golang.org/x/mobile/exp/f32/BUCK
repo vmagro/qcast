@@ -1,0 +1,16 @@
+go_library(
+  name='f32',
+  package_name='golang.org/x/mobile/exp/f32',
+  srcs=[
+    'affine.go',
+    'f32.go',
+    'mat3.go',
+    'mat4.go',
+    'table.go',
+    'vec3.go',
+    'vec4.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

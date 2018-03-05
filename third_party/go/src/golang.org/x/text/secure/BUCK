@@ -1,0 +1,10 @@
+go_library(
+  name='secure',
+  package_name='golang.org/x/text/secure',
+  srcs=[
+    'doc.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

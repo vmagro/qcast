@@ -1,0 +1,17 @@
+go_library(
+  name='v2',
+  package_name='google.golang.org/genproto/googleapis/bigtable/v2',
+  srcs=[
+    'bigtable.pb.go',
+    'data.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/wrappers:wrappers',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/rpc/status:status',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

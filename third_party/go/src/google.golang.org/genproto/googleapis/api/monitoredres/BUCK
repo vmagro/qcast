@@ -1,0 +1,12 @@
+go_library(
+  name='monitoredres',
+  package_name='google.golang.org/genproto/googleapis/api/monitoredres',
+  srcs=[
+    'monitored_resource.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/label:label',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,10 @@
+go_library(
+  name='unicode',
+  package_name='golang.org/x/text/unicode',
+  srcs=[
+    'doc.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

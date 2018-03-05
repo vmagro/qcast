@@ -1,0 +1,11 @@
+go_library(
+  name='tap',
+  package_name='google.golang.org/grpc/tap',
+  srcs=[
+    'tap.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+  ],
+  visibility=['PUBLIC'],
+)

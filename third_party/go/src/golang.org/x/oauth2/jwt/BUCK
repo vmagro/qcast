@@ -1,0 +1,14 @@
+go_library(
+  name='jwt',
+  package_name='golang.org/x/oauth2/jwt',
+  srcs=[
+    'jwt.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+    '//third_party/go/src/golang.org/x/oauth2/internal:internal',
+    '//third_party/go/src/golang.org/x/oauth2/jws:jws',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,11 @@
+go_library(
+  name='source_context',
+  package_name='google.golang.org/genproto/protobuf/source_context',
+  srcs=[
+    'source_context.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -5,3 +5,4 @@ buck-out/
 .buckd/
 
 rethinkdb_data/
+ios/ProvisioningProfiles

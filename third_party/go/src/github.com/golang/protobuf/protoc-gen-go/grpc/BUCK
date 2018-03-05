@@ -1,0 +1,12 @@
+go_library(
+  name='grpc',
+  package_name='github.com/golang/protobuf/protoc-gen-go/grpc',
+  srcs=[
+    'grpc.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/protoc-gen-go/descriptor:descriptor',
+    '//third_party/go/src/github.com/golang/protobuf/protoc-gen-go/generator:generator',
+  ],
+  visibility=['PUBLIC'],
+)

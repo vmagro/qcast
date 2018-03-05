@@ -1,0 +1,13 @@
+go_library(
+  name='http',
+  package_name='github.com/stretchr/testify/http',
+  srcs=[
+    'doc.go',
+    'test_response_writer.go',
+    'test_round_tripper.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/stretchr/testify/mock:mock',
+  ],
+  visibility=['PUBLIC'],
+)

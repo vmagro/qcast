@@ -1,0 +1,11 @@
+go_library(
+  name='gzip',
+  package_name='google.golang.org/grpc/encoding/gzip',
+  srcs=[
+    'gzip.go',
+  ],
+  deps=[
+    '//third_party/go/src/google.golang.org/grpc/encoding:encoding',
+  ],
+  visibility=['PUBLIC'],
+)

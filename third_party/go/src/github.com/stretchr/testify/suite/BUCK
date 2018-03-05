@@ -1,0 +1,14 @@
+go_library(
+  name='suite',
+  package_name='github.com/stretchr/testify/suite',
+  srcs=[
+    'doc.go',
+    'interfaces.go',
+    'suite.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/stretchr/testify/assert:assert',
+    '//third_party/go/src/github.com/stretchr/testify/require:require',
+  ],
+  visibility=['PUBLIC'],
+)

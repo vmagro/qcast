@@ -1,0 +1,11 @@
+go_library(
+  name='font',
+  package_name='golang.org/x/mobile/exp/font',
+  srcs=[
+    'doc.go',
+    'font.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

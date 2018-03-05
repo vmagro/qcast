@@ -1,0 +1,11 @@
+go_library(
+  name='ctxhttp',
+  package_name='golang.org/x/net/context/ctxhttp',
+  srcs=[
+    'ctxhttp.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+  ],
+  visibility=['PUBLIC'],
+)

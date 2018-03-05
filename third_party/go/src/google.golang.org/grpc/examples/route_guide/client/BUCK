@@ -1,0 +1,15 @@
+go_library(
+  name='client',
+  package_name='google.golang.org/grpc/examples/route_guide/client',
+  srcs=[
+    'client.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+    '//third_party/go/src/google.golang.org/grpc/credentials:credentials',
+    '//third_party/go/src/google.golang.org/grpc/examples/route_guide/routeguide:routeguide',
+    '//third_party/go/src/google.golang.org/grpc/testdata:testdata',
+  ],
+  visibility=['PUBLIC'],
+)

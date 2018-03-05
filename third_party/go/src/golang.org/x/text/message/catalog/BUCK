@@ -1,0 +1,14 @@
+go_library(
+  name='catalog',
+  package_name='golang.org/x/text/message/catalog',
+  srcs=[
+    'catalog.go',
+    'dict.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal:internal',
+    '//third_party/go/src/golang.org/x/text/internal/catmsg:catmsg',
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

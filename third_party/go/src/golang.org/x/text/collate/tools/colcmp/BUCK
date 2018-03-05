@@ -1,0 +1,16 @@
+go_library(
+  name='colcmp',
+  package_name='golang.org/x/text/collate/tools/colcmp',
+  srcs=[
+    'chars.go',
+    'col.go',
+    'colcmp.go',
+    'gen.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/collate:collate',
+    '//third_party/go/src/golang.org/x/text/language:language',
+    '//third_party/go/src/golang.org/x/text/unicode/norm:norm',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,14 @@
+go_library(
+  name='type',
+  package_name='google.golang.org/genproto/googleapis/logging/type',
+  srcs=[
+    'http_request.pb.go',
+    'log_severity.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/duration:duration',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+  ],
+  visibility=['PUBLIC'],
+)

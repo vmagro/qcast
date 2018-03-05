@@ -1,0 +1,12 @@
+go_library(
+  name='proto',
+  package_name='google.golang.org/grpc/encoding/proto',
+  srcs=[
+    'proto.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/google.golang.org/grpc/encoding:encoding',
+  ],
+  visibility=['PUBLIC'],
+)

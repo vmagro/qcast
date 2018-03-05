@@ -1,0 +1,11 @@
+go_library(
+  name='java',
+  package_name='golang.org/x/mobile/internal/importers/java',
+  srcs=[
+    'java.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/internal/importers:importers',
+  ],
+  visibility=['PUBLIC'],
+)

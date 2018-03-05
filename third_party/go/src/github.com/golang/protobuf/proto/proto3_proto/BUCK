@@ -1,0 +1,13 @@
+go_library(
+  name='proto3_proto',
+  package_name='github.com/golang/protobuf/proto/proto3_proto',
+  srcs=[
+    'proto3.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/proto/testdata:testdata',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/any:any',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,11 @@
+go_library(
+  name='metadata',
+  package_name='google.golang.org/grpc/metadata',
+  srcs=[
+    'metadata.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+  ],
+  visibility=['PUBLIC'],
+)

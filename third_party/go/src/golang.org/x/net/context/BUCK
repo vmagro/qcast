@@ -1,0 +1,12 @@
+go_library(
+  name='context',
+  package_name='golang.org/x/net/context',
+  srcs=[
+    'context.go',
+    'go17.go',
+    'go19.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

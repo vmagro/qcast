@@ -1,0 +1,18 @@
+go_library(
+  name='currency',
+  package_name='golang.org/x/text/currency',
+  srcs=[
+    'common.go',
+    'currency.go',
+    'format.go',
+    'query.go',
+    'tables.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal:internal',
+    '//third_party/go/src/golang.org/x/text/internal/format:format',
+    '//third_party/go/src/golang.org/x/text/internal/tag:tag',
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

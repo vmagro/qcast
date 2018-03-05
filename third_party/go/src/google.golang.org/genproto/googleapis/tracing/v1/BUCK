@@ -1,0 +1,14 @@
+go_library(
+  name='v1',
+  package_name='google.golang.org/genproto/googleapis/tracing/v1',
+  srcs=[
+    'trace.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/timestamp:timestamp',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/rpc/status:status',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,28 @@
+go_library(
+  name='spotify',
+  package_name='github.com/zmb3/spotify',
+  srcs=[
+    'album.go',
+    'artist.go',
+    'audio_analysis.go',
+    'audio_features.go',
+    'auth.go',
+    'category.go',
+    'countries.go',
+    'cursor.go',
+    'library.go',
+    'page.go',
+    'player.go',
+    'playlist.go',
+    'recommendation.go',
+    'search.go',
+    'spotify.go',
+    'track.go',
+    'track_attributes.go',
+    'user.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+  visibility=['PUBLIC'],
+)

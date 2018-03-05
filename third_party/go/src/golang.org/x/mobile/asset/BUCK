@@ -1,0 +1,12 @@
+go_library(
+  name='asset',
+  package_name='golang.org/x/mobile/asset',
+  srcs=[
+    'asset.go',
+    'asset_desktop.go',
+    'doc.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

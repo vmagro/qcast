@@ -1,0 +1,12 @@
+go_binary(
+  name='client',
+  srcs=glob(["*.go"]),
+  deps=[
+    '//proto:go',
+    '//third_party/go/src/github.com/gorilla/websocket:websocket',
+    '//third_party/go/src/github.com/golang/glog:glog',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/empty:empty',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+    '//third_party/go/src/google.golang.org/grpc/metadata:metadata',
+  ],
+)

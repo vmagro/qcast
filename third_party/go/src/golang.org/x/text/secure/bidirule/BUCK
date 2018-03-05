@@ -1,0 +1,12 @@
+go_library(
+  name='bidirule',
+  package_name='golang.org/x/text/secure/bidirule',
+  srcs=[
+    'bidirule.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+    '//third_party/go/src/golang.org/x/text/unicode/bidi:bidi',
+  ],
+  visibility=['PUBLIC'],
+)

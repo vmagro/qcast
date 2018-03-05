@@ -1,0 +1,11 @@
+go_library(
+  name='paypal',
+  package_name='golang.org/x/oauth2/paypal',
+  srcs=[
+    'paypal.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,11 @@
+go_library(
+  name='autobahn',
+  package_name='github.com/gorilla/websocket/examples/autobahn',
+  srcs=[
+    'server.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/gorilla/websocket:websocket',
+  ],
+  visibility=['PUBLIC'],
+)

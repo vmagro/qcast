@@ -1,0 +1,10 @@
+go_library(
+  name='utf8internal',
+  package_name='golang.org/x/text/internal/utf8internal',
+  srcs=[
+    'utf8internal.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,20 @@
+go_library(
+  name='websocket',
+  package_name='github.com/gorilla/websocket',
+  srcs=[
+    'client.go',
+    'client_clone.go',
+    'compression.go',
+    'conn.go',
+    'conn_read.go',
+    'doc.go',
+    'json.go',
+    'mask.go',
+    'prepared.go',
+    'server.go',
+    'util.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

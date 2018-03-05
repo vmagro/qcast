@@ -1,0 +1,12 @@
+go_library(
+  name='triegen',
+  package_name='golang.org/x/text/internal/triegen',
+  srcs=[
+    'compact.go',
+    'print.go',
+    'triegen.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

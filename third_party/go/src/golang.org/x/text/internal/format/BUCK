@@ -1,0 +1,11 @@
+go_library(
+  name='format',
+  package_name='golang.org/x/text/internal/format',
+  srcs=[
+    'format.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

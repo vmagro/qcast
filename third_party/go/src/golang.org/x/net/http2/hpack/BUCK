@@ -1,0 +1,13 @@
+go_library(
+  name='hpack',
+  package_name='golang.org/x/net/http2/hpack',
+  srcs=[
+    'encode.go',
+    'hpack.go',
+    'huffman.go',
+    'tables.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

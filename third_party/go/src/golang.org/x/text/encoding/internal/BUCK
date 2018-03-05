@@ -1,0 +1,13 @@
+go_library(
+  name='internal',
+  package_name='golang.org/x/text/encoding/internal',
+  srcs=[
+    'internal.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/encoding:encoding',
+    '//third_party/go/src/golang.org/x/text/encoding/internal/identifier:identifier',
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+  ],
+  visibility=['PUBLIC'],
+)

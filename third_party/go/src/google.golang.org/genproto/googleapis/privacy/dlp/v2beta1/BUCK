@@ -1,0 +1,20 @@
+go_library(
+  name='v2beta1',
+  package_name='google.golang.org/genproto/googleapis/privacy/dlp/v2beta1',
+  srcs=[
+    'dlp.pb.go',
+    'storage.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/empty:empty',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/timestamp:timestamp',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/longrunning:longrunning',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/type/date:date',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/type/timeofday:timeofday',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

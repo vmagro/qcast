@@ -1,0 +1,11 @@
+go_library(
+  name='codec_perf',
+  package_name='google.golang.org/grpc/test/codec_perf',
+  srcs=[
+    'perf.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

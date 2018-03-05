@@ -1,0 +1,21 @@
+genrule(
+  name='go_out',
+  srcs=glob(['*.proto']),
+  bash='mkdir -p $OUT && protoc --go_out=plugins=grpc:$OUT *.proto',
+  out='go',
+)
+
+go_library(
+  name='go',
+  package_name='qcast',
+  srcs=[':go_out'],
+  deps=[
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes:ptypes',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/timestamp:timestamp',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/empty:empty',
+  ],
+  visibility=['PUBLIC'],
+)

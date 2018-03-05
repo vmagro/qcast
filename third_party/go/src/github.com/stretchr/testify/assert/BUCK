@@ -1,0 +1,18 @@
+go_library(
+  name='assert',
+  package_name='github.com/stretchr/testify/assert',
+  srcs=[
+    'assertion_format.go',
+    'assertion_forward.go',
+    'assertions.go',
+    'doc.go',
+    'errors.go',
+    'forward_assertions.go',
+    'http_assertions.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/stretchr/testify/vendor/github.com/davecgh/go-spew/spew:spew',
+    '//third_party/go/src/github.com/stretchr/testify/vendor/github.com/pmezard/go-difflib/difflib:difflib',
+  ],
+  visibility=['PUBLIC'],
+)

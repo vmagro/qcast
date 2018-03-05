@@ -1,0 +1,12 @@
+go_library(
+  name='peer',
+  package_name='google.golang.org/grpc/peer',
+  srcs=[
+    'peer.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/grpc/credentials:credentials',
+  ],
+  visibility=['PUBLIC'],
+)

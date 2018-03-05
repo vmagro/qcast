@@ -1,0 +1,13 @@
+go_library(
+  name='api',
+  package_name='google.golang.org/genproto/protobuf/api',
+  srcs=[
+    'api.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/google.golang.org/genproto/protobuf/ptype:ptype',
+    '//third_party/go/src/google.golang.org/genproto/protobuf/source_context:source_context',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,19 @@
+go_library(
+  name='norm',
+  package_name='golang.org/x/text/unicode/norm',
+  srcs=[
+    'composition.go',
+    'forminfo.go',
+    'input.go',
+    'iter.go',
+    'normalize.go',
+    'readwriter.go',
+    'tables.go',
+    'transform.go',
+    'trie.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+  ],
+  visibility=['PUBLIC'],
+)

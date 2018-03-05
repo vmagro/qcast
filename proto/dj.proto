@@ -1,0 +1,34 @@
+syntax = "proto3";
+package qcast;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+import "music.proto";
+
+
+service Dj {
+  rpc QueueUpdates(google.protobuf.Empty) returns (stream QueueUpdate) {}
+  rpc AddTrack(Track) returns (QueuedTrack) {}
+}
+
+message Guest {
+  string id = 1;
+  string name = 2;
+}
+
+message QueuedTrack {
+  Track track = 1;
+  Guest guest = 2;
+}
+
+message QueueUpdate {
+  enum Type {
+    Add = 0;
+    Remove = 1;
+    Reorder = 2;
+  }
+  google.protobuf.Timestamp timestamp = 1;
+  Type type = 2;
+  QueuedTrack track = 3;
+  int32 position = 4;
+}

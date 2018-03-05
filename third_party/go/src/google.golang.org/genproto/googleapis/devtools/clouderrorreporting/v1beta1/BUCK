@@ -1,0 +1,20 @@
+go_library(
+  name='v1beta1',
+  package_name='google.golang.org/genproto/googleapis/devtools/clouderrorreporting/v1beta1',
+  srcs=[
+    'common.pb.go',
+    'error_group_service.pb.go',
+    'error_stats_service.pb.go',
+    'report_errors_service.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/duration:duration',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/timestamp:timestamp',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/monitoredres:monitoredres',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,15 @@
+go_library(
+  name='gobind',
+  package_name='golang.org/x/mobile/cmd/gobind',
+  srcs=[
+    'doc.go',
+    'gen.go',
+    'main.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/bind:bind',
+    '//third_party/go/src/golang.org/x/mobile/internal/importers:importers',
+    '//third_party/go/src/golang.org/x/mobile/internal/importers/java:java',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,12 @@
+go_library(
+  name='clientcreds',
+  package_name='github.com/zmb3/spotify/examples/authenticate/clientcreds',
+  srcs=[
+    'client_credentials.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/zmb3/spotify:spotify',
+    '//third_party/go/src/golang.org/x/oauth2/clientcredentials:clientcredentials',
+  ],
+  visibility=['PUBLIC'],
+)

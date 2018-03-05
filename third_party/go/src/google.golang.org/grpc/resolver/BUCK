@@ -1,0 +1,10 @@
+go_library(
+  name='resolver',
+  package_name='google.golang.org/grpc/resolver',
+  srcs=[
+    'resolver.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

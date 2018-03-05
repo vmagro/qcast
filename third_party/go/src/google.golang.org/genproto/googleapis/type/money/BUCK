@@ -1,0 +1,11 @@
+go_library(
+  name='money',
+  package_name='google.golang.org/genproto/googleapis/type/money',
+  srcs=[
+    'money.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

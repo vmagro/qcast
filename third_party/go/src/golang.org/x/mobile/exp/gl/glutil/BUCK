@@ -1,0 +1,16 @@
+go_library(
+  name='glutil',
+  package_name='golang.org/x/mobile/exp/gl/glutil',
+  srcs=[
+    'doc.go',
+    'glimage.go',
+    'glutil.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/event/size:size',
+    '//third_party/go/src/golang.org/x/mobile/exp/f32:f32',
+    '//third_party/go/src/golang.org/x/mobile/geom:geom',
+    '//third_party/go/src/golang.org/x/mobile/gl:gl',
+  ],
+  visibility=['PUBLIC'],
+)

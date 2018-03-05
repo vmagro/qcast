@@ -1,0 +1,10 @@
+go_library(
+  name='jws',
+  package_name='golang.org/x/oauth2/jws',
+  srcs=[
+    'jws.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

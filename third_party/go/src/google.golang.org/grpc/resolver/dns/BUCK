@@ -1,0 +1,14 @@
+go_library(
+  name='dns',
+  package_name='google.golang.org/grpc/resolver/dns',
+  srcs=[
+    'dns_resolver.go',
+    'go18.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/grpc/grpclog:grpclog',
+    '//third_party/go/src/google.golang.org/grpc/resolver:resolver',
+  ],
+  visibility=['PUBLIC'],
+)

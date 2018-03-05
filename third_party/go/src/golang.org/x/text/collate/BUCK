@@ -1,0 +1,17 @@
+go_library(
+  name='collate',
+  package_name='golang.org/x/text/collate',
+  srcs=[
+    'collate.go',
+    'index.go',
+    'option.go',
+    'sort.go',
+    'tables.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal/colltab:colltab',
+    '//third_party/go/src/golang.org/x/text/language:language',
+    '//third_party/go/src/golang.org/x/text/unicode/norm:norm',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,20 @@
+go_library(
+  name='v1',
+  package_name='google.golang.org/genproto/googleapis/cloud/vision/v1',
+  srcs=[
+    'geometry.pb.go',
+    'image_annotator.pb.go',
+    'text_annotation.pb.go',
+    'web_detection.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/rpc/status:status',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/type/color:color',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/type/latlng:latlng',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

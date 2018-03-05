@@ -1,0 +1,18 @@
+go_library(
+  name='japanese',
+  package_name='golang.org/x/text/encoding/japanese',
+  srcs=[
+    'all.go',
+    'eucjp.go',
+    'iso2022jp.go',
+    'shiftjis.go',
+    'tables.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/encoding:encoding',
+    '//third_party/go/src/golang.org/x/text/encoding/internal:internal',
+    '//third_party/go/src/golang.org/x/text/encoding/internal/identifier:identifier',
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+  ],
+  visibility=['PUBLIC'],
+)

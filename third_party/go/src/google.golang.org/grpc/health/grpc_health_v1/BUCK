@@ -1,0 +1,13 @@
+go_library(
+  name='grpc_health_v1',
+  package_name='google.golang.org/grpc/health/grpc_health_v1',
+  srcs=[
+    'health.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

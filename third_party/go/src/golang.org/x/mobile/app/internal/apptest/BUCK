@@ -1,0 +1,10 @@
+go_library(
+  name='apptest',
+  package_name='golang.org/x/mobile/app/internal/apptest',
+  srcs=[
+    'apptest.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

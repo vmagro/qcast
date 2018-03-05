@@ -1,0 +1,16 @@
+go_library(
+  name='backoff',
+  package_name='github.com/cenkalti/backoff',
+  srcs=[
+    'backoff.go',
+    'context.go',
+    'exponential.go',
+    'retry.go',
+    'ticker.go',
+    'tries.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+  ],
+  visibility=['PUBLIC'],
+)

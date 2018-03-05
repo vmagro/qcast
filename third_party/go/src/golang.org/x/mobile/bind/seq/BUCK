@@ -1,0 +1,13 @@
+go_library(
+  name='seq',
+  package_name='golang.org/x/mobile/bind/seq',
+  srcs=[
+    'ref.go',
+    'seq.go',
+    'string.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/internal/mobileinit:mobileinit',
+  ],
+  visibility=['PUBLIC'],
+)

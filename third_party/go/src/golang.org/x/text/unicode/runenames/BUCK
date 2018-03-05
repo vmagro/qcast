@@ -1,0 +1,12 @@
+go_library(
+  name='runenames',
+  package_name='golang.org/x/text/unicode/runenames',
+  srcs=[
+    'bits.go',
+    'runenames.go',
+    'tables.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

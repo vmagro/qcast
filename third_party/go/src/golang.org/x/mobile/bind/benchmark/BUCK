@@ -1,0 +1,10 @@
+go_library(
+  name='benchmark',
+  package_name='golang.org/x/mobile/bind/benchmark',
+  srcs=[
+    'benchmark.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

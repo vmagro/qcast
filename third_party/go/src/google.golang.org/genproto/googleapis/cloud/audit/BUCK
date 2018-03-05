@@ -1,0 +1,15 @@
+go_library(
+  name='audit',
+  package_name='google.golang.org/genproto/googleapis/cloud/audit',
+  srcs=[
+    'audit_log.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/any:any',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/struct:struct',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/rpc/status:status',
+  ],
+  visibility=['PUBLIC'],
+)

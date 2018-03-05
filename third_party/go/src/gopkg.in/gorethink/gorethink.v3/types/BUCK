@@ -1,0 +1,10 @@
+go_library(
+  name='types',
+  package_name='gopkg.in/gorethink/gorethink.v3/types',
+  srcs=[
+    'geometry.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

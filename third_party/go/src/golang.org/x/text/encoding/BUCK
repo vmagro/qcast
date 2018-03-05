@@ -1,0 +1,12 @@
+go_library(
+  name='encoding',
+  package_name='golang.org/x/text/encoding',
+  srcs=[
+    'encoding.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/encoding/internal/identifier:identifier',
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+  ],
+  visibility=['PUBLIC'],
+)

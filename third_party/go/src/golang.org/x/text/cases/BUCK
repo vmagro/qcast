@@ -1,0 +1,20 @@
+go_library(
+  name='cases',
+  package_name='golang.org/x/text/cases',
+  srcs=[
+    'cases.go',
+    'context.go',
+    'fold.go',
+    'info.go',
+    'map.go',
+    'tables.go',
+    'trieval.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal:internal',
+    '//third_party/go/src/golang.org/x/text/language:language',
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+    '//third_party/go/src/golang.org/x/text/unicode/norm:norm',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,13 @@
+go_library(
+  name='utf32',
+  package_name='golang.org/x/text/encoding/unicode/utf32',
+  srcs=[
+    'utf32.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/encoding:encoding',
+    '//third_party/go/src/golang.org/x/text/encoding/internal/identifier:identifier',
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+  ],
+  visibility=['PUBLIC'],
+)

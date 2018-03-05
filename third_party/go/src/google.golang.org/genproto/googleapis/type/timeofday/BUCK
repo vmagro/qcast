@@ -1,0 +1,11 @@
+go_library(
+  name='timeofday',
+  package_name='google.golang.org/genproto/googleapis/type/timeofday',
+  srcs=[
+    'timeofday.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

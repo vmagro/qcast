@@ -1,0 +1,23 @@
+go_library(
+  name='v1',
+  package_name='google.golang.org/genproto/googleapis/cloud/ml/v1',
+  srcs=[
+    'job_service.pb.go',
+    'model_service.pb.go',
+    'operation_metadata.pb.go',
+    'prediction_service.pb.go',
+    'project_service.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/empty:empty',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/timestamp:timestamp',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/httpbody:httpbody',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/serviceconfig:serviceconfig',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/longrunning:longrunning',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

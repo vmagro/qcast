@@ -1,0 +1,18 @@
+go_library(
+  name='build',
+  package_name='golang.org/x/text/collate/build',
+  srcs=[
+    'builder.go',
+    'colelem.go',
+    'contract.go',
+    'order.go',
+    'table.go',
+    'trie.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal/colltab:colltab',
+    '//third_party/go/src/golang.org/x/text/language:language',
+    '//third_party/go/src/golang.org/x/text/unicode/norm:norm',
+  ],
+  visibility=['PUBLIC'],
+)

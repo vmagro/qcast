@@ -1,0 +1,12 @@
+go_library(
+  name='h2i',
+  package_name='golang.org/x/net/http2/h2i',
+  srcs=[
+    'h2i.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/http2:http2',
+    '//third_party/go/src/golang.org/x/net/http2/hpack:hpack',
+  ],
+  visibility=['PUBLIC'],
+)

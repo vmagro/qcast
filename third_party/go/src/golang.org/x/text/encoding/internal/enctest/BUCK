@@ -1,0 +1,13 @@
+go_library(
+  name='enctest',
+  package_name='golang.org/x/text/encoding/internal/enctest',
+  srcs=[
+    'enctest.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/encoding:encoding',
+    '//third_party/go/src/golang.org/x/text/encoding/internal/identifier:identifier',
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+  ],
+  visibility=['PUBLIC'],
+)

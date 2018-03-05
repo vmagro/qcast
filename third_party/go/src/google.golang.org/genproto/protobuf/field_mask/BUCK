@@ -1,0 +1,11 @@
+go_library(
+  name='field_mask',
+  package_name='google.golang.org/genproto/protobuf/field_mask',
+  srcs=[
+    'field_mask.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

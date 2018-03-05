@@ -1,0 +1,16 @@
+go_library(
+  name='reflection',
+  package_name='google.golang.org/grpc/reflection',
+  srcs=[
+    'serverreflection.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/protoc-gen-go/descriptor:descriptor',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+    '//third_party/go/src/google.golang.org/grpc/codes:codes',
+    '//third_party/go/src/google.golang.org/grpc/reflection/grpc_reflection_v1alpha:grpc_reflection_v1alpha',
+    '//third_party/go/src/google.golang.org/grpc/status:status',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,10 @@
+go_library(
+  name='secondpkg',
+  package_name='golang.org/x/mobile/bind/testpkg/secondpkg',
+  srcs=[
+    'secondpkg.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

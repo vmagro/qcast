@@ -1,0 +1,28 @@
+syntax = "proto3";
+package qcast;
+
+message Image {
+  string url = 1;
+  int32 width = 2;
+  int32 height = 3;
+}
+
+message Artist {
+  string uri = 1;
+  string name = 2;
+  repeated Image images = 3;
+}
+
+message Album {
+  string uri = 1;
+  string name = 2;
+  repeated Artist artists = 3;
+  repeated Image art = 4;
+}
+
+message Track {
+  string uri = 1;
+  string name = 2;
+  Album album = 3;
+  repeated Artist artists = 4;
+}

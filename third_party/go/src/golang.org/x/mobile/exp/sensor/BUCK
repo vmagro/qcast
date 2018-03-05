@@ -1,0 +1,11 @@
+go_library(
+  name='sensor',
+  package_name='golang.org/x/mobile/exp/sensor',
+  srcs=[
+    'notmobile.go',
+    'sensor.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

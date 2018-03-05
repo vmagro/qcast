@@ -1,0 +1,12 @@
+go_library(
+  name='errdetails',
+  package_name='google.golang.org/genproto/googleapis/rpc/errdetails',
+  srcs=[
+    'error_details.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/duration:duration',
+  ],
+  visibility=['PUBLIC'],
+)

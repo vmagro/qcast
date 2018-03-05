@@ -1,0 +1,11 @@
+go_library(
+  name='objc',
+  package_name='golang.org/x/mobile/internal/importers/objc',
+  srcs=[
+    'objc.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/internal/importers:importers',
+  ],
+  visibility=['PUBLIC'],
+)

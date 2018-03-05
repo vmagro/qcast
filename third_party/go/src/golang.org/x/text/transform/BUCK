@@ -1,0 +1,10 @@
+go_library(
+  name='transform',
+  package_name='golang.org/x/text/transform',
+  srcs=[
+    'transform.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,12 @@
+go_library(
+  name='mapstructure',
+  package_name='github.com/mitchellh/mapstructure',
+  srcs=[
+    'decode_hooks.go',
+    'error.go',
+    'mapstructure.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

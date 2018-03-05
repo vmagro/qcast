@@ -1,0 +1,14 @@
+go_library(
+  name='greeter_server',
+  package_name='google.golang.org/grpc/examples/helloworld/greeter_server',
+  srcs=[
+    'main.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+    '//third_party/go/src/google.golang.org/grpc/examples/helloworld/helloworld:helloworld',
+    '//third_party/go/src/google.golang.org/grpc/reflection:reflection',
+  ],
+  visibility=['PUBLIC'],
+)

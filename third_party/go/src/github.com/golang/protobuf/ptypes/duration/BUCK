@@ -1,0 +1,11 @@
+go_library(
+  name='duration',
+  package_name='github.com/golang/protobuf/ptypes/duration',
+  srcs=[
+    'duration.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

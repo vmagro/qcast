@@ -1,0 +1,11 @@
+go_library(
+  name='filewatch',
+  package_name='github.com/gorilla/websocket/examples/filewatch',
+  srcs=[
+    'main.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/gorilla/websocket:websocket',
+  ],
+  visibility=['PUBLIC'],
+)

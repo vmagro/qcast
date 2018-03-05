@@ -1,0 +1,10 @@
+go_library(
+  name='simplepkg',
+  package_name='golang.org/x/mobile/bind/testpkg/simplepkg',
+  srcs=[
+    'simplepkg.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,16 @@
+go_library(
+  name='spew',
+  package_name='github.com/stretchr/testify/vendor/github.com/davecgh/go-spew/spew',
+  srcs=[
+    'bypass.go',
+    'common.go',
+    'config.go',
+    'doc.go',
+    'dump.go',
+    'format.go',
+    'spew.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

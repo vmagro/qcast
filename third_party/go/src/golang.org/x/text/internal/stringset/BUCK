@@ -1,0 +1,10 @@
+go_library(
+  name='stringset',
+  package_name='golang.org/x/text/internal/stringset',
+  srcs=[
+    'set.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,19 @@
+go_library(
+  name='ianaindex',
+  package_name='golang.org/x/text/encoding/ianaindex',
+  srcs=[
+    'ianaindex.go',
+    'tables.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/encoding:encoding',
+    '//third_party/go/src/golang.org/x/text/encoding/charmap:charmap',
+    '//third_party/go/src/golang.org/x/text/encoding/internal/identifier:identifier',
+    '//third_party/go/src/golang.org/x/text/encoding/japanese:japanese',
+    '//third_party/go/src/golang.org/x/text/encoding/korean:korean',
+    '//third_party/go/src/golang.org/x/text/encoding/simplifiedchinese:simplifiedchinese',
+    '//third_party/go/src/golang.org/x/text/encoding/traditionalchinese:traditionalchinese',
+    '//third_party/go/src/golang.org/x/text/encoding/unicode:unicode',
+  ],
+  visibility=['PUBLIC'],
+)

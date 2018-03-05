@@ -1,0 +1,19 @@
+go_library(
+  name='number',
+  package_name='golang.org/x/text/internal/number',
+  srcs=[
+    'common.go',
+    'decimal.go',
+    'format.go',
+    'number.go',
+    'pattern.go',
+    'roundingmode_string.go',
+    'tables.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal:internal',
+    '//third_party/go/src/golang.org/x/text/internal/stringset:stringset',
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

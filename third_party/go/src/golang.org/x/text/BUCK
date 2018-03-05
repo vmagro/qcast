@@ -1,0 +1,10 @@
+go_library(
+  name='text',
+  package_name='golang.org/x/text',
+  srcs=[
+    'doc.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

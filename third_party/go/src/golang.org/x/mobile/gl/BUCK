@@ -1,0 +1,15 @@
+go_library(
+  name='gl',
+  package_name='golang.org/x/mobile/gl',
+  srcs=[
+    'consts.go',
+    'doc.go',
+    'fn.go',
+    'gl.go',
+    'interface.go',
+    'types_prod.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

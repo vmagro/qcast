@@ -1,0 +1,10 @@
+go_library(
+  name='objc',
+  package_name='golang.org/x/mobile/bind/objc',
+  srcs=[
+    'doc.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

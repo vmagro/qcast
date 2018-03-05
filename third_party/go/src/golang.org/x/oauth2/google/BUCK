@@ -1,0 +1,19 @@
+go_library(
+  name='google',
+  package_name='golang.org/x/oauth2/google',
+  srcs=[
+    'appengine.go',
+    'default.go',
+    'google.go',
+    'jwt.go',
+    'sdk.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+    '//third_party/go/src/golang.org/x/oauth2/internal:internal',
+    '//third_party/go/src/golang.org/x/oauth2/jws:jws',
+    '//third_party/go/src/golang.org/x/oauth2/jwt:jwt',
+  ],
+  visibility=['PUBLIC'],
+)

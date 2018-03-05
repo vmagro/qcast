@@ -1,0 +1,12 @@
+go_library(
+  name='profile',
+  package_name='github.com/zmb3/spotify/examples/profile',
+  srcs=[
+    'profile.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/zmb3/spotify:spotify',
+    '//third_party/go/src/golang.org/x/oauth2/clientcredentials:clientcredentials',
+  ],
+  visibility=['PUBLIC'],
+)

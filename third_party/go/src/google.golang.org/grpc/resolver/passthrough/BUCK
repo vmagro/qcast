@@ -1,0 +1,11 @@
+go_library(
+  name='passthrough',
+  package_name='google.golang.org/grpc/resolver/passthrough',
+  srcs=[
+    'passthrough.go',
+  ],
+  deps=[
+    '//third_party/go/src/google.golang.org/grpc/resolver:resolver',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,11 @@
+go_library(
+  name='httpbody',
+  package_name='google.golang.org/genproto/googleapis/api/httpbody',
+  srcs=[
+    'httpbody.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

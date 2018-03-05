@@ -1,0 +1,15 @@
+go_library(
+  name='require',
+  package_name='github.com/stretchr/testify/require',
+  srcs=[
+    'doc.go',
+    'forward_requirements.go',
+    'require.go',
+    'require_forward.go',
+    'requirements.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/stretchr/testify/assert:assert',
+  ],
+  visibility=['PUBLIC'],
+)

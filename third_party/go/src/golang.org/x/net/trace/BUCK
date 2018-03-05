@@ -1,0 +1,14 @@
+go_library(
+  name='trace',
+  package_name='golang.org/x/net/trace',
+  srcs=[
+    'events.go',
+    'histogram.go',
+    'trace.go',
+    'trace_go17.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/internal/timeseries:timeseries',
+  ],
+  visibility=['PUBLIC'],
+)

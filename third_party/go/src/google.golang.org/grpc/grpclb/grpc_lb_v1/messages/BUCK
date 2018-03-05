@@ -1,0 +1,11 @@
+go_library(
+  name='messages',
+  package_name='google.golang.org/grpc/grpclb/grpc_lb_v1/messages',
+  srcs=[
+    'messages.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

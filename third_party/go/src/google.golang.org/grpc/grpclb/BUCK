@@ -1,0 +1,9 @@
+go_library(
+  name='grpclb',
+  package_name='google.golang.org/grpc/grpclb',
+  srcs=[
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

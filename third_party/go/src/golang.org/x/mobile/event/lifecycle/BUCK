@@ -1,0 +1,10 @@
+go_library(
+  name='lifecycle',
+  package_name='golang.org/x/mobile/event/lifecycle',
+  srcs=[
+    'lifecycle.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

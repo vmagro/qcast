@@ -1,0 +1,10 @@
+go_library(
+  name='keepalive',
+  package_name='google.golang.org/grpc/keepalive',
+  srcs=[
+    'keepalive.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

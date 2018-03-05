@@ -1,0 +1,6 @@
+go_library(
+  name='testdata',
+  package_name='google.golang.org/grpc/testdata',
+  srcs=glob(['*.go']),
+  visibility=['PUBLIC'],
+)

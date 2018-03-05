@@ -1,0 +1,14 @@
+go_library(
+  name='testpkg',
+  package_name='golang.org/x/mobile/bind/testpkg',
+  srcs=[
+    'testpkg.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/asset:asset',
+    '//third_party/go/src/golang.org/x/mobile/bind/testpkg/secondpkg:secondpkg',
+    '//third_party/go/src/golang.org/x/mobile/bind/testpkg/simplepkg:simplepkg',
+    '//third_party/go/src/golang.org/x/mobile/bind/testpkg/unboundpkg:unboundpkg',
+  ],
+  visibility=['PUBLIC'],
+)

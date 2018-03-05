@@ -1,0 +1,24 @@
+go_binary(
+  name='spotify',
+  srcs=[
+    'main.go',
+  ],
+  deps=[
+    ':lib',
+    '//third_party/go/src/github.com/golang/glog:glog',
+  ],
+)
+
+go_library(
+  name='lib',
+  package_name='lib',
+  srcs=glob(['lib/*.go'], excludes=['lib/*_test.go']),
+  deps=[
+    '//proto:go',
+    '//third_party/go/src/github.com/golang/glog:glog',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+    '//third_party/go/src/google.golang.org/grpc/metadata:metadata',
+    '//third_party/go/src/github.com/zmb3/spotify:spotify',
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+)

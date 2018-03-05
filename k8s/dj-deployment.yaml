@@ -1,0 +1,27 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: dj
+  namespace: qcast
+spec:
+  selector:
+    matchLabels:
+      app: dj
+      tier: frontend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dj
+        tier: frontend
+    spec:
+      containers:
+      - name: master
+        image: qcast/dj:v1
+        imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 8080

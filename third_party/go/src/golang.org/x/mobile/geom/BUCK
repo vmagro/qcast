@@ -1,0 +1,10 @@
+go_library(
+  name='geom',
+  package_name='golang.org/x/mobile/geom',
+  srcs=[
+    'geom.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

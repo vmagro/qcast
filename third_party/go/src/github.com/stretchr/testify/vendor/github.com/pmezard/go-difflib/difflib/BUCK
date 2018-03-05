@@ -1,0 +1,10 @@
+go_library(
+  name='difflib',
+  package_name='github.com/stretchr/testify/vendor/github.com/pmezard/go-difflib/difflib',
+  srcs=[
+    'difflib.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,12 @@
+go_library(
+  name='gen',
+  package_name='golang.org/x/text/internal/gen',
+  srcs=[
+    'code.go',
+    'gen.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/unicode/cldr:cldr',
+  ],
+  visibility=['PUBLIC'],
+)

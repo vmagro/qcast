@@ -1,0 +1,11 @@
+go_library(
+  name='httplex',
+  package_name='golang.org/x/net/lex/httplex',
+  srcs=[
+    'httplex.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/idna:idna',
+  ],
+  visibility=['PUBLIC'],
+)

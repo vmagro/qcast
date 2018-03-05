@@ -1,0 +1,13 @@
+go_library(
+  name='logging',
+  package_name='google.golang.org/genproto/googleapis/iam/v1/logging',
+  srcs=[
+    'audit_data.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/iam/v1:v1',
+  ],
+  visibility=['PUBLIC'],
+)

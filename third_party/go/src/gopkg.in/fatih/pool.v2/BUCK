@@ -1,0 +1,12 @@
+go_library(
+  name='pool.v2',
+  package_name='gopkg.in/fatih/pool.v2',
+  srcs=[
+    'channel.go',
+    'conn.go',
+    'pool.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

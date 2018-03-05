@@ -1,0 +1,11 @@
+go_library(
+  name='timestamp',
+  package_name='github.com/golang/protobuf/ptypes/timestamp',
+  srcs=[
+    'timestamp.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

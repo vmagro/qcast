@@ -1,0 +1,17 @@
+go_library(
+  name='ptypes',
+  package_name='github.com/golang/protobuf/ptypes',
+  srcs=[
+    'any.go',
+    'doc.go',
+    'duration.go',
+    'timestamp.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/any:any',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/duration:duration',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/timestamp:timestamp',
+  ],
+  visibility=['PUBLIC'],
+)

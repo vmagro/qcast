@@ -1,0 +1,10 @@
+go_library(
+  name='internal',
+  package_name='google.golang.org/grpc/internal',
+  srcs=[
+    'internal.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

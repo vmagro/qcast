@@ -1,0 +1,11 @@
+go_library(
+  name='fitbit',
+  package_name='golang.org/x/oauth2/fitbit',
+  srcs=[
+    'fitbit.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+  visibility=['PUBLIC'],
+)

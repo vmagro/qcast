@@ -1,0 +1,12 @@
+go_library(
+  name='hipchat',
+  package_name='golang.org/x/oauth2/hipchat',
+  srcs=[
+    'hipchat.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+    '//third_party/go/src/golang.org/x/oauth2/clientcredentials:clientcredentials',
+  ],
+  visibility=['PUBLIC'],
+)

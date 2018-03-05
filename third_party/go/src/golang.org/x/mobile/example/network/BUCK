@@ -1,0 +1,15 @@
+go_library(
+  name='network',
+  package_name='golang.org/x/mobile/example/network',
+  srcs=[
+    'main.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/app:app',
+    '//third_party/go/src/golang.org/x/mobile/event/lifecycle:lifecycle',
+    '//third_party/go/src/golang.org/x/mobile/event/paint:paint',
+    '//third_party/go/src/golang.org/x/mobile/event/size:size',
+    '//third_party/go/src/golang.org/x/mobile/gl:gl',
+  ],
+  visibility=['PUBLIC'],
+)

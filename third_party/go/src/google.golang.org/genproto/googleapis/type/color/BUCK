@@ -1,0 +1,12 @@
+go_library(
+  name='color',
+  package_name='google.golang.org/genproto/googleapis/type/color',
+  srcs=[
+    'color.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/wrappers:wrappers',
+  ],
+  visibility=['PUBLIC'],
+)

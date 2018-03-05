@@ -1,0 +1,21 @@
+go_library(
+  name='bind',
+  package_name='golang.org/x/mobile/bind',
+  srcs=[
+    'bind.go',
+    'gen.go',
+    'genclasses.go',
+    'gengo.go',
+    'genjava.go',
+    'genobjc.go',
+    'genobjcw.go',
+    'printer.go',
+    'types.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/internal/importers:importers',
+    '//third_party/go/src/golang.org/x/mobile/internal/importers/java:java',
+    '//third_party/go/src/golang.org/x/mobile/internal/importers/objc:objc',
+  ],
+  visibility=['PUBLIC'],
+)

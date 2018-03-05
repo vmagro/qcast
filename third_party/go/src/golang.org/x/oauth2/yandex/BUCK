@@ -1,0 +1,11 @@
+go_library(
+  name='yandex',
+  package_name='golang.org/x/oauth2/yandex',
+  srcs=[
+    'yandex.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+  visibility=['PUBLIC'],
+)

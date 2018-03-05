@@ -1,0 +1,9 @@
+go_library(
+  name='mobileinit',
+  package_name='golang.org/x/mobile/internal/mobileinit',
+  srcs=[
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

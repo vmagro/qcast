@@ -1,0 +1,16 @@
+go_library(
+  name='binres',
+  package_name='golang.org/x/mobile/internal/binres',
+  srcs=[
+    'arsc.go',
+    'binres.go',
+    'binres_string.go',
+    'node.go',
+    'pool.go',
+    'sdk.go',
+    'table.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

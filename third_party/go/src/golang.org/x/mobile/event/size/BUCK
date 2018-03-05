@@ -1,0 +1,11 @@
+go_library(
+  name='size',
+  package_name='golang.org/x/mobile/event/size',
+  srcs=[
+    'size.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/geom:geom',
+  ],
+  visibility=['PUBLIC'],
+)

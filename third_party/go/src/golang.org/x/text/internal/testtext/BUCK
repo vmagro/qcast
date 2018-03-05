@@ -1,0 +1,15 @@
+go_library(
+  name='testtext',
+  package_name='golang.org/x/text/internal/testtext',
+  srcs=[
+    'codesize.go',
+    'flag.go',
+    'gc.go',
+    'go1_7.go',
+    'text.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal/gen:gen',
+  ],
+  visibility=['PUBLIC'],
+)

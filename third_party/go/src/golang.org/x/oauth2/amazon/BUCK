@@ -1,0 +1,11 @@
+go_library(
+  name='amazon',
+  package_name='golang.org/x/oauth2/amazon',
+  srcs=[
+    'amazon.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+  visibility=['PUBLIC'],
+)

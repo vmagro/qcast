@@ -1,0 +1,14 @@
+go_library(
+  name='status',
+  package_name='google.golang.org/grpc/status',
+  srcs=[
+    'status.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes:ptypes',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/rpc/status:status',
+    '//third_party/go/src/google.golang.org/grpc/codes:codes',
+  ],
+  visibility=['PUBLIC'],
+)

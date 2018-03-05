@@ -1,0 +1,13 @@
+go_library(
+  name='internal',
+  package_name='golang.org/x/text/internal',
+  srcs=[
+    'internal.go',
+    'match.go',
+    'tables.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

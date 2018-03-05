@@ -1,0 +1,12 @@
+go_library(
+  name='connectivity',
+  package_name='google.golang.org/grpc/connectivity',
+  srcs=[
+    'connectivity.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/grpc/grpclog:grpclog',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,13 @@
+go_library(
+  name='reql_tests',
+  package_name='gopkg.in/gorethink/gorethink.v3/internal/reql_tests',
+  srcs=[
+    'common.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/stretchr/testify/suite:suite',
+    '//third_party/go/src/gopkg.in/gorethink/gorethink.v3:gorethink.v3',
+    '//third_party/go/src/gopkg.in/gorethink/gorethink.v3/internal/compare:compare',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,10 @@
+go_library(
+  name='unboundpkg',
+  package_name='golang.org/x/mobile/bind/testpkg/unboundpkg',
+  srcs=[
+    'unboundpkg.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

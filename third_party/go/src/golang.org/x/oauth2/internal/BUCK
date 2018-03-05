@@ -1,0 +1,15 @@
+go_library(
+  name='internal',
+  package_name='golang.org/x/oauth2/internal',
+  srcs=[
+    'doc.go',
+    'oauth2.go',
+    'token.go',
+    'transport.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/golang.org/x/net/context/ctxhttp:ctxhttp',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,26 @@
+go_library(
+  name='precis',
+  package_name='golang.org/x/text/secure/precis',
+  srcs=[
+    'class.go',
+    'context.go',
+    'doc.go',
+    'nickname.go',
+    'options.go',
+    'profile.go',
+    'profiles.go',
+    'tables.go',
+    'transformer.go',
+    'trieval.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/cases:cases',
+    '//third_party/go/src/golang.org/x/text/language:language',
+    '//third_party/go/src/golang.org/x/text/runes:runes',
+    '//third_party/go/src/golang.org/x/text/secure/bidirule:bidirule',
+    '//third_party/go/src/golang.org/x/text/transform:transform',
+    '//third_party/go/src/golang.org/x/text/unicode/norm:norm',
+    '//third_party/go/src/golang.org/x/text/width:width',
+  ],
+  visibility=['PUBLIC'],
+)

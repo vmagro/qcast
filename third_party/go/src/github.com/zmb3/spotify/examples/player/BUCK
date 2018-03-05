@@ -1,0 +1,11 @@
+go_library(
+  name='player',
+  package_name='github.com/zmb3/spotify/examples/player',
+  srcs=[
+    'player.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/zmb3/spotify:spotify',
+  ],
+  visibility=['PUBLIC'],
+)

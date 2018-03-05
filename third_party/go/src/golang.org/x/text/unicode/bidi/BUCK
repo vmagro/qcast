@@ -1,0 +1,15 @@
+go_library(
+  name='bidi',
+  package_name='golang.org/x/text/unicode/bidi',
+  srcs=[
+    'bidi.go',
+    'bracket.go',
+    'core.go',
+    'prop.go',
+    'tables.go',
+    'trieval.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

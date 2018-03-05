@@ -1,0 +1,11 @@
+go_library(
+  name='glog',
+  package_name='github.com/golang/glog',
+  srcs=[
+    'glog.go',
+    'glog_file.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

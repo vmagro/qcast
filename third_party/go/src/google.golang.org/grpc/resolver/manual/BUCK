@@ -1,0 +1,11 @@
+go_library(
+  name='manual',
+  package_name='google.golang.org/grpc/resolver/manual',
+  srcs=[
+    'manual.go',
+  ],
+  deps=[
+    '//third_party/go/src/google.golang.org/grpc/resolver:resolver',
+  ],
+  visibility=['PUBLIC'],
+)

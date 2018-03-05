@@ -1,0 +1,14 @@
+go_library(
+  name='v1',
+  package_name='google.golang.org/genproto/googleapis/cloud/billing/v1',
+  srcs=[
+    'cloud_billing.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

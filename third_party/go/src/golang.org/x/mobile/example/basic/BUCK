@@ -1,0 +1,19 @@
+go_library(
+  name='basic',
+  package_name='golang.org/x/mobile/example/basic',
+  srcs=[
+    'main.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/app:app',
+    '//third_party/go/src/golang.org/x/mobile/event/lifecycle:lifecycle',
+    '//third_party/go/src/golang.org/x/mobile/event/paint:paint',
+    '//third_party/go/src/golang.org/x/mobile/event/size:size',
+    '//third_party/go/src/golang.org/x/mobile/event/touch:touch',
+    '//third_party/go/src/golang.org/x/mobile/exp/app/debug:debug',
+    '//third_party/go/src/golang.org/x/mobile/exp/f32:f32',
+    '//third_party/go/src/golang.org/x/mobile/exp/gl/glutil:glutil',
+    '//third_party/go/src/golang.org/x/mobile/gl:gl',
+  ],
+  visibility=['PUBLIC'],
+)

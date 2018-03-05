@@ -1,0 +1,10 @@
+go_library(
+  name='encoding',
+  package_name='google.golang.org/grpc/encoding',
+  srcs=[
+    'encoding.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

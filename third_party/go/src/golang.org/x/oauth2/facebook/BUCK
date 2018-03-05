@@ -1,0 +1,11 @@
+go_library(
+  name='facebook',
+  package_name='golang.org/x/oauth2/facebook',
+  srcs=[
+    'facebook.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+  visibility=['PUBLIC'],
+)

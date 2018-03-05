@@ -1,0 +1,12 @@
+go_library(
+  name='al',
+  package_name='golang.org/x/mobile/exp/audio/al',
+  srcs=[
+    'al.go',
+    'alc.go',
+    'const.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,12 @@
+go_library(
+  name='stats',
+  package_name='google.golang.org/grpc/benchmark/stats',
+  srcs=[
+    'histogram.go',
+    'stats.go',
+    'util.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,10 @@
+go_library(
+  name='java',
+  package_name='golang.org/x/mobile/bind/java',
+  srcs=[
+    'doc.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

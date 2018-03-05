@@ -1,0 +1,10 @@
+go_library(
+  name='touch',
+  package_name='golang.org/x/mobile/event/touch',
+  srcs=[
+    'touch.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

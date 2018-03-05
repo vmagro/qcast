@@ -1,0 +1,12 @@
+go_library(
+  name='glogger',
+  package_name='google.golang.org/grpc/grpclog/glogger',
+  srcs=[
+    'glogger.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/glog:glog',
+    '//third_party/go/src/google.golang.org/grpc/grpclog:grpclog',
+  ],
+  visibility=['PUBLIC'],
+)

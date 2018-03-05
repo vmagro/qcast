@@ -1,0 +1,11 @@
+go_library(
+  name='any',
+  package_name='github.com/golang/protobuf/ptypes/any',
+  srcs=[
+    'any.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

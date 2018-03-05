@@ -1,0 +1,15 @@
+go_library(
+  name='search',
+  package_name='golang.org/x/text/search',
+  srcs=[
+    'index.go',
+    'pattern.go',
+    'search.go',
+    'tables.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal/colltab:colltab',
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

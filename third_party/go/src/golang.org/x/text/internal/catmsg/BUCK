@@ -1,0 +1,13 @@
+go_library(
+  name='catmsg',
+  package_name='golang.org/x/text/internal/catmsg',
+  srcs=[
+    'catmsg.go',
+    'codec.go',
+    'varint.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

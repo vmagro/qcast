@@ -1,0 +1,11 @@
+go_library(
+  name='latlng',
+  package_name='google.golang.org/genproto/googleapis/type/latlng',
+  srcs=[
+    'latlng.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

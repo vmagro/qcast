@@ -1,0 +1,11 @@
+go_library(
+  name='odnoklassniki',
+  package_name='golang.org/x/oauth2/odnoklassniki',
+  srcs=[
+    'odnoklassniki.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+  ],
+  visibility=['PUBLIC'],
+)

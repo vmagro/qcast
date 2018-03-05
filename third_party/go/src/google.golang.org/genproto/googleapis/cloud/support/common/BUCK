@@ -1,0 +1,13 @@
+go_library(
+  name='common',
+  package_name='google.golang.org/genproto/googleapis/cloud/support/common',
+  srcs=[
+    'common.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/timestamp:timestamp',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+  ],
+  visibility=['PUBLIC'],
+)

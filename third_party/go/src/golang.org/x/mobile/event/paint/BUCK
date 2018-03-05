@@ -1,0 +1,10 @@
+go_library(
+  name='paint',
+  package_name='golang.org/x/mobile/event/paint',
+  srcs=[
+    'paint.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,19 @@
+go_library(
+  name='encoding',
+  package_name='gopkg.in/gorethink/gorethink.v3/encoding',
+  srcs=[
+    'cache.go',
+    'decoder.go',
+    'decoder_types.go',
+    'encoder.go',
+    'encoder_types.go',
+    'encoding.go',
+    'errors.go',
+    'fold.go',
+    'tags.go',
+    'utils.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

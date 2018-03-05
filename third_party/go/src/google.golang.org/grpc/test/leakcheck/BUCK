@@ -1,0 +1,10 @@
+go_library(
+  name='leakcheck',
+  package_name='google.golang.org/grpc/test/leakcheck',
+  srcs=[
+    'leakcheck.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

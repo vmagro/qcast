@@ -1,0 +1,14 @@
+go_library(
+  name='gotext',
+  package_name='golang.org/x/text/cmd/gotext',
+  srcs=[
+    'doc.go',
+    'extract.go',
+    'main.go',
+    'message.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,9 @@
+go_library(
+  name='primitives',
+  package_name='google.golang.org/grpc/benchmark/primitives',
+  srcs=[
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,16 @@
+go_library(
+  name='glsprite',
+  package_name='golang.org/x/mobile/exp/sprite/glsprite',
+  srcs=[
+    'glsprite.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/event/size:size',
+    '//third_party/go/src/golang.org/x/mobile/exp/f32:f32',
+    '//third_party/go/src/golang.org/x/mobile/exp/gl/glutil:glutil',
+    '//third_party/go/src/golang.org/x/mobile/exp/sprite:sprite',
+    '//third_party/go/src/golang.org/x/mobile/exp/sprite/clock:clock',
+    '//third_party/go/src/golang.org/x/mobile/geom:geom',
+  ],
+  visibility=['PUBLIC'],
+)

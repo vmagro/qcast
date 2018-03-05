@@ -1,0 +1,10 @@
+go_library(
+  name='timeseries',
+  package_name='golang.org/x/net/internal/timeseries',
+  srcs=[
+    'timeseries.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

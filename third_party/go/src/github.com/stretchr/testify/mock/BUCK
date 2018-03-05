@@ -1,0 +1,15 @@
+go_library(
+  name='mock',
+  package_name='github.com/stretchr/testify/mock',
+  srcs=[
+    'doc.go',
+    'mock.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/stretchr/testify/vendor/github.com/davecgh/go-spew/spew:spew',
+    '//third_party/go/src/github.com/stretchr/testify/vendor/github.com/pmezard/go-difflib/difflib:difflib',
+    '//third_party/go/src/github.com/stretchr/testify/vendor/github.com/stretchr/objx:objx',
+    '//third_party/go/src/github.com/stretchr/testify/assert:assert',
+  ],
+  visibility=['PUBLIC'],
+)

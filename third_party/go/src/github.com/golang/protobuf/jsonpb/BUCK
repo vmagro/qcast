@@ -1,0 +1,12 @@
+go_library(
+  name='jsonpb',
+  package_name='github.com/golang/protobuf/jsonpb',
+  srcs=[
+    'jsonpb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/struct:struct',
+  ],
+  visibility=['PUBLIC'],
+)

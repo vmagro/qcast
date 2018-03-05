@@ -1,0 +1,28 @@
+go_library(
+  name='v3',
+  package_name='google.golang.org/genproto/googleapis/monitoring/v3',
+  srcs=[
+    'common.pb.go',
+    'group.pb.go',
+    'group_service.pb.go',
+    'metric.pb.go',
+    'metric_service.pb.go',
+    'uptime.pb.go',
+    'uptime_service.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/duration:duration',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/empty:empty',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/timestamp:timestamp',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/distribution:distribution',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/metric:metric',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/monitoredres:monitoredres',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/rpc/status:status',
+    '//third_party/go/src/google.golang.org/genproto/protobuf/field_mask:field_mask',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

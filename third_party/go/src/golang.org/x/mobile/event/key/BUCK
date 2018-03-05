@@ -1,0 +1,11 @@
+go_library(
+  name='key',
+  package_name='golang.org/x/mobile/event/key',
+  srcs=[
+    'code_string.go',
+    'key.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,19 @@
+syntax = "proto3";
+package qcast;
+
+import "music.proto";
+
+
+service Spotify {
+  rpc Search(SearchRequest) returns (SearchResponse) {}
+}
+
+message SearchRequest {
+  string query = 1;
+}
+
+message SearchResponse {
+  repeated Track tracks = 1;
+  repeated Artist artists = 2;
+  repeated Album albums = 3;
+}

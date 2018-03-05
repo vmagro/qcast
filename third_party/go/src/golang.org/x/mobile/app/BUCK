@@ -1,0 +1,19 @@
+go_library(
+  name='app',
+  package_name='golang.org/x/mobile/app',
+  srcs=[
+    'app.go',
+    'doc.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/event/key:key',
+    '//third_party/go/src/golang.org/x/mobile/event/lifecycle:lifecycle',
+    '//third_party/go/src/golang.org/x/mobile/event/paint:paint',
+    '//third_party/go/src/golang.org/x/mobile/event/size:size',
+    '//third_party/go/src/golang.org/x/mobile/event/touch:touch',
+    '//third_party/go/src/golang.org/x/mobile/geom:geom',
+    '//third_party/go/src/golang.org/x/mobile/gl:gl',
+    '//third_party/go/src/golang.org/x/mobile/internal/mobileinit:mobileinit',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,17 @@
+go_library(
+  name='idna',
+  package_name='golang.org/x/text/internal/export/idna',
+  srcs=[
+    'idna.go',
+    'punycode.go',
+    'tables.go',
+    'trie.go',
+    'trieval.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/secure/bidirule:bidirule',
+    '//third_party/go/src/golang.org/x/text/unicode/bidi:bidi',
+    '//third_party/go/src/golang.org/x/text/unicode/norm:norm',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,12 @@
+go_library(
+  name='ql2',
+  package_name='gopkg.in/gorethink/gorethink.v3/ql2',
+  srcs=[
+    'generate.go',
+    'ql2.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+  ],
+  visibility=['PUBLIC'],
+)

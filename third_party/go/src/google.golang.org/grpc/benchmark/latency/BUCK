@@ -1,0 +1,11 @@
+go_library(
+  name='latency',
+  package_name='google.golang.org/grpc/benchmark/latency',
+  srcs=[
+    'latency.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+  ],
+  visibility=['PUBLIC'],
+)

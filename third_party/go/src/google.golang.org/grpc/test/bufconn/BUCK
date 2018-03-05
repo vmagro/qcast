@@ -1,0 +1,10 @@
+go_library(
+  name='bufconn',
+  package_name='google.golang.org/grpc/test/bufconn',
+  srcs=[
+    'bufconn.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

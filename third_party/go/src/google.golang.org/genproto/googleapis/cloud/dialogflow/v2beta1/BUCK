@@ -1,0 +1,26 @@
+go_library(
+  name='v2beta1',
+  package_name='google.golang.org/genproto/googleapis/cloud/dialogflow/v2beta1',
+  srcs=[
+    'agent.pb.go',
+    'context.pb.go',
+    'entity_type.pb.go',
+    'intent.pb.go',
+    'session.pb.go',
+    'session_entity_type.pb.go',
+    'webhook.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/empty:empty',
+    '//third_party/go/src/github.com/golang/protobuf/ptypes/struct:struct',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/longrunning:longrunning',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/rpc/status:status',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/type/latlng:latlng',
+    '//third_party/go/src/google.golang.org/genproto/protobuf/field_mask:field_mask',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

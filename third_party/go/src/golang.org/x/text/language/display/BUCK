@@ -1,0 +1,15 @@
+go_library(
+  name='display',
+  package_name='golang.org/x/text/language/display',
+  srcs=[
+    'dict.go',
+    'display.go',
+    'lookup.go',
+    'tables.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/internal/format:format',
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

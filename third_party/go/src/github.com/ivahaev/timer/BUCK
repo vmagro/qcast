@@ -1,0 +1,10 @@
+go_library(
+  name='timer',
+  package_name='github.com/ivahaev/timer',
+  srcs=[
+    'timer.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

@@ -3,53 +3,59 @@ srcs = glob(['*.go'])
 mobile_srcs = glob(['mobile/*.go'])
 
 go_library(
-    name='go',
-    srcs=srcs,
-    deps=[
-        '//third_party/github.com/golang/glog:glog',
-        '//third_party/github.com/zmb3/spotify:spotify',
-        '//third_party/golang.org/x/oauth2:oauth2',
-        '//third_party/gopkg.in/gorethink/gorethink.v3:gorethink',
-        '//third_party/github.com/mitchellh/mapstructure:mapstructure',
-        '//third_party/github.com/ivahaev/timer:timer',
-    ],
-    tests=[':tests'],
-    visibility=['PUBLIC'], )
+  name='go',
+  srcs=srcs,
+  deps=[
+    '//third_party/go/src/github.com/golang/glog:glog',
+    '//third_party/go/src/github.com/zmb3/spotify:spotify',
+    '//third_party/go/src/golang.org/x/oauth2:oauth2',
+    '//third_party/go/src/gopkg.in/gorethink/gorethink.v3:gorethink.v3',
+    '//third_party/go/src/github.com/mitchellh/mapstructure:mapstructure',
+    '//third_party/go/src/github.com/ivahaev/timer:timer',
+  ],
+  tests = [':tests'],
+  visibility = ['PUBLIC'],
+)
 
 go_library(
-    name='mobile',
-    srcs=mobile_srcs,
-    deps=[':go'], )
+  name='mobile',
+  srcs=mobile_srcs,
+  deps=[':go'],
+)
 
 genrule(
-    name='ios-framework',
-    srcs=['buildios.sh'] + srcs + mobile_srcs,
-    bash='$SRCDIR/buildios.sh $(location //third_party:godeps) $OUT',
-    out='Libqcast.framework',
-    visibility=['PUBLIC'], )
+  name='ios-framework',
+  srcs=['buildios.sh'] + srcs + mobile_srcs,
+  bash='$SRCDIR/buildios.sh $(location //third_party:godeps) $OUT',
+  out='Libqcast.framework',
+  visibility=['PUBLIC'],
+)
 
 genrule(
-    name='android-library',
-    srcs=['buildandroid.sh'] + srcs + mobile_srcs,
-    bash='$SRCDIR/buildandroid.sh $(location //third_party:godeps) $OUT',
-    out='Libqcast.framework',
-    visibility=['PUBLIC'], )
+  name='android-library',
+  srcs=['buildandroid.sh'] + srcs + mobile_srcs,
+  bash='$SRCDIR/buildandroid.sh $(location //third_party:godeps) $OUT',
+  out='Libqcast.framework',
+  visibility=['PUBLIC'],
+)
 
 go_test(
-    name='tests',
-    srcs=glob(['*_test.go']),
-    deps=[
-        ':go',
-        '//third_party/github.com/stretchr/testify:assert',
-        '//third_party/github.com/stretchr/testify:mock',
-    ], )
+  name='tests',
+  srcs=glob(['*_test.go']),
+  deps=[
+    ':go',
+    '//third_party/go/src/github.com/stretchr/testify/assert:assert',
+    '//third_party/go/src/github.com/stretchr/testify/mock:mock',
+  ],
+)
 
 go_binary(
-    name='repl',
-    srcs=['repl/repl.go'],
-    deps=[
-        ':go',
-        '//third_party/github.com/golang/glog:glog',
-        '//third_party/gopkg.in/gorethink/gorethink.v3:gorethink',
-        '//third_party/github.com/ivahaev/timer:timer',
-    ], )
+  name='repl',
+  srcs=['repl/repl.go'],
+  deps=[
+    ':go',
+    '//third_party/go/src/github.com/golang/glog:glog',
+    '//third_party/go/src/gopkg.in/gorethink/gorethink.v3:gorethink.v3',
+    '//third_party/go/src/github.com/ivahaev/timer:timer',
+  ],
+)

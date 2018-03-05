@@ -1,0 +1,14 @@
+go_library(
+  name='oauth2',
+  package_name='golang.org/x/oauth2',
+  srcs=[
+    'oauth2.go',
+    'token.go',
+    'transport.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/golang.org/x/oauth2/internal:internal',
+  ],
+  visibility=['PUBLIC'],
+)

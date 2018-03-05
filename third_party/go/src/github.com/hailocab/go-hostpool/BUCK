@@ -1,0 +1,13 @@
+go_library(
+  name='go-hostpool',
+  package_name='github.com/hailocab/go-hostpool',
+  srcs=[
+    'epsilon_greedy.go',
+    'epsilon_value_calculators.go',
+    'host_entry.go',
+    'hostpool.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

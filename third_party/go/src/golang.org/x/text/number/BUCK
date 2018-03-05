@@ -1,0 +1,17 @@
+go_library(
+  name='number',
+  package_name='golang.org/x/text/number',
+  srcs=[
+    'doc.go',
+    'format.go',
+    'number.go',
+    'option.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/feature/plural:plural',
+    '//third_party/go/src/golang.org/x/text/internal/format:format',
+    '//third_party/go/src/golang.org/x/text/internal/number:number',
+    '//third_party/go/src/golang.org/x/text/language:language',
+  ],
+  visibility=['PUBLIC'],
+)

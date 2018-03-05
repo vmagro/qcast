@@ -1,0 +1,10 @@
+go_library(
+  name='ucd',
+  package_name='golang.org/x/text/internal/ucd',
+  srcs=[
+    'ucd.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

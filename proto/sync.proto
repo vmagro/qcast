@@ -1,0 +1,37 @@
+syntax = "proto3";
+package qcast;
+
+import "google/protobuf/timestamp.proto";
+import "music.proto";
+
+message Sync {
+  enum SyncType {
+    Track = 0;
+  }
+  SyncType type = 1;
+  google.protobuf.Timestamp timestamp = 2;
+  TrackSync track = 10;
+}
+
+message SyncRequest {
+  google.protobuf.Timestamp since = 2;
+}
+
+message TrackSync {
+  enum Type {
+    Add = 0;
+    Remove = 1;
+    Reorder = 2;
+  }
+  Type type = 1;
+  Track track = 2;
+  int32 position = 3;
+}
+
+message GuestSync {
+  enum Type {
+    Join = 0;
+    Leave = 1;
+  }
+  Type type = 1;
+}

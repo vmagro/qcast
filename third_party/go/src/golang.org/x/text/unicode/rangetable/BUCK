@@ -1,0 +1,12 @@
+go_library(
+  name='rangetable',
+  package_name='golang.org/x/text/unicode/rangetable',
+  srcs=[
+    'merge.go',
+    'rangetable.go',
+    'tables.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

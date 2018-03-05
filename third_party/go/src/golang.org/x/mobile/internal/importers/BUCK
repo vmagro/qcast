@@ -1,0 +1,10 @@
+go_library(
+  name='importers',
+  package_name='golang.org/x/mobile/internal/importers',
+  srcs=[
+    'ast.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

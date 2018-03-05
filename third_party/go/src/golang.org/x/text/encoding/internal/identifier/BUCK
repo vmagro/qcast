@@ -1,0 +1,11 @@
+go_library(
+  name='identifier',
+  package_name='golang.org/x/text/encoding/internal/identifier',
+  srcs=[
+    'identifier.go',
+    'mib.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

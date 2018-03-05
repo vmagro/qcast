@@ -1,0 +1,19 @@
+go_library(
+  name='colltab',
+  package_name='golang.org/x/text/internal/colltab',
+  srcs=[
+    'collelem.go',
+    'colltab.go',
+    'contract.go',
+    'iter.go',
+    'numeric.go',
+    'table.go',
+    'trie.go',
+    'weighter.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/text/language:language',
+    '//third_party/go/src/golang.org/x/text/unicode/norm:norm',
+  ],
+  visibility=['PUBLIC'],
+)

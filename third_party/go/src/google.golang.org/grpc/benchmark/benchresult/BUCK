@@ -1,0 +1,11 @@
+go_library(
+  name='benchresult',
+  package_name='google.golang.org/grpc/benchmark/benchresult',
+  srcs=[
+    'main.go',
+  ],
+  deps=[
+    '//third_party/go/src/google.golang.org/grpc/benchmark/stats:stats',
+  ],
+  visibility=['PUBLIC'],
+)

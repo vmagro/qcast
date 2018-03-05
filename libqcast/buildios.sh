@@ -12,16 +12,7 @@ rm -rf "$libqcast/src/"
 mkdir -p "$libqcast/src/"
 ln -s "$libqcast" "$libqcast/src/libqcast"
 
-# make a fake gopath for the third-party godeps also
-pushd "$GODEPS"
-rm -rf src/
-mkdir src/
-pushd src
-# ignore src, . and pkg when making symlinks
-find .. ! -name src ! -name .. ! -name pkg -maxdepth 1 -exec ln -s {} ./ \;
 third_party="$GODEPS"
-popd
-popd
 
 # run gomobile with our hacked together gopaths
 env GOPATH="$third_party:$libqcast" gomobile bind -tags lldb -target=ios libqcast libqcast/mobile

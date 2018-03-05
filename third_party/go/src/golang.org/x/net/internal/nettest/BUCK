@@ -1,0 +1,15 @@
+go_library(
+  name='nettest',
+  package_name='golang.org/x/net/internal/nettest',
+  srcs=[
+    'helper_bsd.go',
+    'helper_posix.go',
+    'helper_unix.go',
+    'interface.go',
+    'rlimit.go',
+    'stack.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

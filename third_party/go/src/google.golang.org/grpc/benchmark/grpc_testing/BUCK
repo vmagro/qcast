@@ -1,0 +1,17 @@
+go_library(
+  name='grpc_testing',
+  package_name='google.golang.org/grpc/benchmark/grpc_testing',
+  srcs=[
+    'control.pb.go',
+    'messages.pb.go',
+    'payloads.pb.go',
+    'services.pb.go',
+    'stats.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+  ],
+  visibility=['PUBLIC'],
+)

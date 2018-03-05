@@ -1,0 +1,12 @@
+go_library(
+  name='v1',
+  package_name='google.golang.org/genproto/googleapis/devtools/source/v1',
+  srcs=[
+    'source_context.pb.go',
+  ],
+  deps=[
+    '//third_party/go/src/github.com/golang/protobuf/proto:proto',
+    '//third_party/go/src/google.golang.org/genproto/googleapis/api/annotations:annotations',
+  ],
+  visibility=['PUBLIC'],
+)

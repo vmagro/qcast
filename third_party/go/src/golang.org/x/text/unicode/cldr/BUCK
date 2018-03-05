@@ -1,0 +1,16 @@
+go_library(
+  name='cldr',
+  package_name='golang.org/x/text/unicode/cldr',
+  srcs=[
+    'base.go',
+    'cldr.go',
+    'collate.go',
+    'decode.go',
+    'resolve.go',
+    'slice.go',
+    'xml.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)

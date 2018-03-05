@@ -1,0 +1,28 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: rabbitmq-master
+  namespace: qcast
+spec:
+  selector:
+    matchLabels:
+      app: rabbitmq
+      role: master
+      tier: backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rabbitmq
+        role: master
+        tier: backend
+    spec:
+      containers:
+      - name: master
+        image: rabbitmq:3.7.3
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 5672

@@ -1,0 +1,12 @@
+go_library(
+  name='test',
+  package_name='google.golang.org/grpc/test',
+  srcs=[
+    'servertester.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/http2:http2',
+    '//third_party/go/src/golang.org/x/net/http2/hpack:hpack',
+  ],
+  visibility=['PUBLIC'],
+)

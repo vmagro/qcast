@@ -1,0 +1,13 @@
+go_library(
+  name='sprite',
+  package_name='golang.org/x/mobile/exp/sprite',
+  srcs=[
+    'sprite.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/mobile/event/size:size',
+    '//third_party/go/src/golang.org/x/mobile/exp/f32:f32',
+    '//third_party/go/src/golang.org/x/mobile/exp/sprite/clock:clock',
+  ],
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,16 @@
+go_library(
+  name='client',
+  package_name='google.golang.org/grpc/benchmark/client',
+  srcs=[
+    'main.go',
+  ],
+  deps=[
+    '//third_party/go/src/golang.org/x/net/context:context',
+    '//third_party/go/src/google.golang.org/grpc:grpc',
+    '//third_party/go/src/google.golang.org/grpc/benchmark:benchmark',
+    '//third_party/go/src/google.golang.org/grpc/benchmark/grpc_testing:grpc_testing',
+    '//third_party/go/src/google.golang.org/grpc/benchmark/stats:stats',
+    '//third_party/go/src/google.golang.org/grpc/grpclog:grpclog',
+  ],
+  visibility=['PUBLIC'],
+)

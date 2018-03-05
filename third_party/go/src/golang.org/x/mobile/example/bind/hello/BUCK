@@ -1,0 +1,10 @@
+go_library(
+  name='hello',
+  package_name='golang.org/x/mobile/example/bind/hello',
+  srcs=[
+    'hello.go',
+  ],
+  deps=[
+  ],
+  visibility=['PUBLIC'],
+)
