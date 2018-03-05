@@ -1,0 +1,6 @@
+go_library(
+  name='mapstructure',
+  package_name='github.com/mitchellh/mapstructure',
+  srcs=glob(['*.go'], excludes=['*_test.go']),
+  visibility=['PUBLIC'],
+)

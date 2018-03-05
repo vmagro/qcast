@@ -1,0 +1,99 @@
+apple_resource(
+  name = 'AppResources',
+  files = ['QCast/Base.lproj/LaunchScreen.storyboard'],
+)
+
+apple_asset_catalog(
+  name = 'AppAssetsDev',
+  dirs = ['QCast/QCast.xcassets'],
+  app_icon = 'AppIcon-Dev',
+)
+
+apple_asset_catalog(
+  name = 'AppAssets',
+  dirs = ['QCast/QCast.xcassets'],
+  app_icon = 'AppIcon',
+)
+
+apple_binary(
+  name = 'AppBinaryDev',
+  srcs = glob([
+    'QCast/**/*.swift',
+  ]),
+  bridging_header = 'QCast/QCast-BridgingHeader.h',
+  deps = [
+    ':AppAssetsDev',
+    ':AppResources',
+    ':Libqcast',
+    '//third_party:Material',
+    '//third_party:Dwifft',
+    '//third_party:Kingfisher',
+    '//third_party/spotify-ios-sdk:SpotifyAuthentication',
+    '//third_party/spotify-ios-sdk:SpotifyAudioPlayback',
+    '//third_party:Fabric',
+    '//third_party:Crashlytics',
+  ],
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+    '$SDKROOT/System/Library/Frameworks/UIKit.framework',
+    '$SDKROOT/System/Library/Frameworks/Security.framework',
+  ],
+)
+
+apple_binary(
+  name = 'AppBinary',
+  srcs = glob([
+    'QCast/**/*.swift',
+  ]),
+  bridging_header = 'QCast/QCast-BridgingHeader.h',
+  deps = [
+    ':AppAssets',
+    ':AppResources',
+    ':Libqcast',
+    '//third_party:Material',
+    '//third_party:Dwifft',
+    '//third_party:Kingfisher',
+    '//third_party/spotify-ios-sdk:SpotifyAuthentication',
+    '//third_party/spotify-ios-sdk:SpotifyAudioPlayback',
+    '//third_party:Fabric',
+    '//third_party:Crashlytics',
+  ],
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+    '$SDKROOT/System/Library/Frameworks/UIKit.framework',
+    '$SDKROOT/System/Library/Frameworks/Security.framework',
+  ],
+)
+
+apple_bundle(
+  name = 'QCastDev',
+  binary = ':AppBinaryDev',
+  extension = 'app',
+  info_plist = 'QCast/QCast-Dev.plist',
+  info_plist_substitutions = {
+    'PRODUCT_BUNDLE_IDENTIFIER': 'com.qcastapp.ios.dev',
+  },
+)
+
+apple_bundle(
+  name = 'QCast',
+  binary = ':AppBinary',
+  extension = 'app',
+  info_plist = 'QCast/Info.plist',
+  info_plist_substitutions = {
+    'CODE_SIGN_ENTITLEMENTS': 'QCast/Entitlements.plist',
+    'PRODUCT_BUNDLE_IDENTIFIER': 'com.qcastapp.ios',
+  },
+)
+
+apple_package(
+  name = 'QCastPackage',
+  bundle = ':QCast',
+)
+
+prebuilt_apple_framework(
+  name = 'Libqcast',
+  deps = ['//libqcast:go'],
+  framework = '//libqcast:ios-framework',
+  preferred_linkage = 'static',
+)

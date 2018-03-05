@@ -1,0 +1,6 @@
+go_library(
+  name = 'spew',
+  package_name = 'github.com/davecgh/go-spew/spew',
+  srcs = glob(['spew/*.go'], excludes=['spew/*_test.go', 'spew/bypasssafe.go']),
+  visibility = ['PUBLIC'],
+)

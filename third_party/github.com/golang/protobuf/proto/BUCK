@@ -1,0 +1,6 @@
+go_library(
+  name='proto',
+  package_name='github.com/golang/protobuf/proto',
+  srcs=glob(['*.go'], excludes=['*_test.go', 'pointer_reflect.go']),
+  visibility=['PUBLIC'],
+)

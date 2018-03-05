@@ -1,0 +1,6 @@
+go_library(
+  name='pool',
+  package_name='gopkg.in/fatih/pool.v2',
+  srcs=glob(['*.go'], excludes=['*_test.go']),
+  visibility=['PUBLIC'],
+)

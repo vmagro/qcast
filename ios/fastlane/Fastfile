@@ -1,0 +1,52 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "2.28.9"
+
+default_platform :ios
+
+platform :ios do
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  lane :beta do
+    # Ensure that your git status is not dirty
+    ensure_git_status_clean
+
+    # build with buck
+    sh "buck clean"
+    sh "buck build ios:QCastPackage#iphoneos-arm64"
+    # resign the app with sigh because buck screws up the signature
+    resign(ipa: "../buck-out/gen/ios/QCastPackage#iphoneos-arm64.ipa",
+           entitlements: "QCast/Entitlements.plist",
+           signing_identity: "iPhone Distribution: Stephen Magro (2DAZ3V2PJG)",
+           provisioning_profile: "./ProvisioningProfiles/QCast_App_Store.mobileprovision")
+
+    pilot(ipa: "../buck-out/gen/ios/QCastPackage#iphoneos-arm64.ipa")
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    # Ensure that your git status is not dirty
+    ensure_git_status_clean
+
+    # build with buck
+    sh "buck build ios:QCastPackage#iphoneos-arm64"
+    # resign the app with sigh because buck screws up the signature
+    resign(ipa: "../buck-out/gen/ios/QCastPackage#iphoneos-arm64.ipa",
+           signing_identity: "iPhone Distribution: Stephen Magro (2DAZ3V2PJG)",
+           provisioning_profile: "./ProvisioningProfiles/QCast_App_Store.mobileprovision")
+
+    upload_to_app_store(ipa: "../buck-out/gen/ios/QCastPackage#iphoneos-arm64.ipa")
+  end
+
+end

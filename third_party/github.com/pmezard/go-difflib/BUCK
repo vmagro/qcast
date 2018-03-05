@@ -1,0 +1,6 @@
+go_library(
+  name = 'difflib',
+  package_name = 'github.com/pmezard/go-difflib/difflib',
+  srcs = glob(['difflib/*.go'], excludes=['difflib/*_test.go']),
+  visibility = ['PUBLIC'],
+)

@@ -1,0 +1,6 @@
+go_library(
+  name = 'glog',
+  package_name = 'github.com/golang/glog',
+  srcs = glob(['**/*.go'], excludes=['**/*_test.go']),
+  visibility = ['PUBLIC'],
+)

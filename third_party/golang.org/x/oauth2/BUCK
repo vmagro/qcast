@@ -1,0 +1,20 @@
+go_library(
+  name = 'oauth2',
+  package_name = 'golang.org/x/oauth2',
+  srcs = glob(['*.go'], excludes=['*_appengine.go', '*_test.go']),
+  deps = [
+    ':internal',
+    '//third_party/golang.org/x/net/context:context',
+  ],
+  visibility = ['PUBLIC'],
+)
+
+go_library(
+  name = 'internal',
+  package_name = 'golang.org/x/oauth2/internal',
+  srcs = glob(['internal/**/*.go'], excludes=['internal/**/*_test.go']),
+  deps = [
+    '//third_party/golang.org/x/net/context:context',
+    '//third_party/golang.org/x/net/context:ctxhttp',
+  ],
+)

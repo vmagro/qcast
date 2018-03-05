@@ -1,0 +1,20 @@
+prebuilt_apple_framework(
+  name='SpotifyAuthentication',
+  framework='SpotifyAuthentication.framework',
+  preferred_linkage='shared',
+  visibility=['PUBLIC'],
+)
+
+prebuilt_apple_framework(
+  name='SpotifyAudioPlayback',
+  framework='SpotifyAudioPlayback.framework',
+  preferred_linkage='shared',
+  visibility=['PUBLIC'],
+)
+
+prebuilt_apple_framework(
+  name='SpotifyMetadata',
+  framework='SpotifyMetadata.framework',
+  preferred_linkage='shared',
+  visibility=['PUBLIC'],
+)

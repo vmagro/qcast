@@ -1,0 +1,7 @@
+go_library(
+  name = 'spotify',
+  package_name = 'github.com/zmb3/spotify',
+  srcs = glob(['**/*.go'], excludes=['**/*_test.go', 'examples/**/*.go']),
+  deps = ['//third_party/golang.org/x/oauth2:oauth2'],
+  visibility = ['PUBLIC'],
+)

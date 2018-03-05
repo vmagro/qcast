@@ -1,0 +1,34 @@
+go_library(
+  name = 'assert',
+  package_name = 'github.com/stretchr/testify/assert',
+  srcs = glob(['assert/*.go'], excludes=['assert/*_test.go']),
+  deps = [
+    '//third_party/github.com/davecgh/go-spew:spew',
+    '//third_party/github.com/pmezard/go-difflib:difflib',
+  ],
+  visibility = ['PUBLIC'],
+)
+
+go_library(
+  name = 'http',
+  package_name = 'github.com/stretchr/testify/http',
+  srcs = glob(['http/*.go'], excludes=['http/*_test.go']),
+  deps = [
+    '//third_party/github.com/stretchr/testify:assert',
+    '//third_party/github.com/stretchr/testify:mock',
+  ],
+  visibility = ['PUBLIC'],
+)
+
+go_library(
+  name = 'mock',
+  package_name = 'github.com/stretchr/testify/mock',
+  srcs = glob(['mock/*.go'], excludes=['mock/*_test.go']),
+  deps = [
+    '//third_party/github.com/stretchr/testify:assert',
+    '//third_party/github.com/stretchr/objx:objx',
+    '//third_party/github.com/davecgh/go-spew:spew',
+    '//third_party/github.com/pmezard/go-difflib:difflib',
+  ],
+  visibility = ['PUBLIC'],
+)

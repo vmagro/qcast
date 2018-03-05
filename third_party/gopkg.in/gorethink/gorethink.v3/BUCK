@@ -1,0 +1,38 @@
+go_library(
+  name = 'gorethink',
+  package_name = 'gopkg.in/gorethink/gorethink.v3',
+  srcs = glob(['*.go'], excludes=['*_test.go']),
+  deps = [
+    ':ql2',
+    ':encoding',
+    ':types',
+    '//third_party/github.com/golang/glog:glog',
+    '//third_party/github.com/cenkalti/backoff:backoff',
+    '//third_party/github.com/hailocab/go-hostpool:go-hostpool',
+    '//third_party/golang.org/x/net/context:context',
+    '//third_party/golang.org/x/crypto/pbkdf2:pbkdf2',
+    '//third_party/gopkg.in/fatih/pool.v2:pool',
+  ],
+  visibility = ['PUBLIC'],
+)
+
+go_library(
+  name='ql2',
+  package_name='gopkg.in/gorethink/gorethink.v3/ql2',
+  srcs=glob(['ql2/*.go'], excludes=['ql2/*_test.go']),
+  deps=[
+    '//third_party/github.com/golang/protobuf/proto:proto',
+  ],
+)
+
+go_library(
+  name='encoding',
+  package_name='gopkg.in/gorethink/gorethink.v3/encoding',
+  srcs=glob(['encoding/*.go'], excludes=['encoding/*_test.go']),
+)
+
+go_library(
+  name='types',
+  package_name='gopkg.in/gorethink/gorethink.v3/types',
+  srcs=glob(['types/*.go'], excludes=['types/*_test.go']),
+)

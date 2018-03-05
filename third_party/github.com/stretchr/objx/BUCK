@@ -1,0 +1,6 @@
+go_library(
+  name = 'objx',
+  package_name = 'github.com/stretchr/objx',
+  srcs = glob(['*.go'], excludes=['*_test.go']),
+  visibility = ['PUBLIC'],
+)

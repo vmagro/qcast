@@ -1,0 +1,90 @@
+export_file(
+  name = 'godeps',
+  src = '.',
+  out = 'godeps',
+  visibility = ['PUBLIC'],
+)
+
+apple_asset_catalog(
+  name = 'MaterialAssets',
+  dirs = [
+    'Material/Sources/Assets.xcassets',
+  ],
+)
+
+apple_library(
+  name = 'Material',
+  preprocessor_flags = ['-fobjc-arc'],
+  srcs = glob([
+    'Material/Sources/**/*.swift',
+    'Material/Sources/**/*.m',
+    'Material/Sources/**/*.mm',
+  ]),
+  deps = [':Motion', ':MaterialAssets'],
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/UIKit.framework',
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+  ],
+  visibility = ['PUBLIC'],
+)
+
+apple_library(
+  name = 'Motion',
+  preprocessor_flags = ['-fobjc-arc'],
+  headers = ['Motion/Sources/Motion.h'],
+  srcs = glob([
+    'Motion/Sources/**/*.swift',
+    'Motion/Sources/**/*.m',
+    'Motion/Sources/**/*.mm',
+  ]),
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+  ],
+  visibility = ['PUBLIC'],
+)
+
+apple_library(
+  name = 'Dwifft',
+  preprocessor_flags = ['-fobjc-arc'],
+  srcs = glob([
+    'Dwifft/Dwifft/**/*.swift',
+  ]),
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+  ],
+  visibility = ['PUBLIC'],
+)
+
+apple_library(
+  name = 'Kingfisher',
+  preprocessor_flags = ['-fobjc-arc'],
+  srcs = glob([
+    'Kingfisher/Sources/**/*.swift',
+  ], excludes=['Kingfisher/Sources/NSButton+Kingfisher.swift']),
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+  ],
+  visibility = ['PUBLIC'],
+)
+
+prebuilt_apple_framework(
+  name = 'Crashlytics',
+  framework = 'Fabric/Crashlytics.framework',
+  exported_linker_flags = [
+    '-lc++',
+    '-lz',
+  ],
+  preferred_linkage = 'static',
+  visibility = ['PUBLIC'],
+)
+
+prebuilt_apple_framework(
+  name = 'Fabric',
+  framework = 'Fabric/Fabric.framework',
+  exported_linker_flags = [
+    '-lc++',
+    '-lz',
+  ],
+  preferred_linkage = 'static',
+  visibility = ['PUBLIC'],
+)

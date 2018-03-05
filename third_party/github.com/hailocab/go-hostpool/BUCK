@@ -1,0 +1,6 @@
+go_library(
+  name='go-hostpool',
+  package_name='github.com/hailocab/go-hostpool',
+  srcs=glob(['*.go'], excludes=['*_test.go']),
+  visibility=['PUBLIC'],
+)

@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A1441221FCBF8B0000A23DC /* TrackListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1441211FCBF8B0000A23DC /* TrackListTable.swift */; };
+		9A2FF4841FE0C01A0000377A /* Libqcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2FF4831FE0C0190000377A /* Libqcast.framework */; };
+		9A316EDC1FD3D1560046149F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A316EDB1FD3D1550046149F /* Info.plist */; };
+		9A316EE01FD3D37D0046149F /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A316EDF1FD3D37D0046149F /* Entitlements.plist */; };
+		9A3A6A4C1FDC571A00F158B8 /* SpotifyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A6A4B1FDC571A00F158B8 /* SpotifyPlayer.swift */; };
+		9A85BCE21FCCA5670063E352 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A85BCE11FCCA5670063E352 /* PlaylistViewController.swift */; };
+		9AA249061FCB7B760080F7C2 /* NamePartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA249021FCB7B750080F7C2 /* NamePartyViewController.swift */; };
+		9AA249071FCB7B760080F7C2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA249031FCB7B750080F7C2 /* LocationViewController.swift */; };
+		9AA249081FCB7B760080F7C2 /* PartyConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA249041FCB7B750080F7C2 /* PartyConfirmViewController.swift */; };
+		9AA249091FCB7B760080F7C2 /* PartyMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA249051FCB7B750080F7C2 /* PartyMoodViewController.swift */; };
+		9AC7FB061FCB626300581657 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC7FB041FCB626200581657 /* SpotifyAudioPlayback.framework */; };
+		9AC7FB071FCB626300581657 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC7FB051FCB626300581657 /* SpotifyAuthentication.framework */; };
+		9AF02D971FCE033E007B1830 /* PlaybackSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF02D961FCE033E007B1830 /* PlaybackSelectViewController.swift */; };
+		E7A30F041A8325A500000000 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E291A8325A500000000 /* HomeViewController.swift */; };
+		E7A30F0420DAE01900000000 /* QCast.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E2920DAE01900000000 /* QCast.xcassets */; };
+		E7A30F0420DAE01900000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E2920DAE01900000001 /* Assets.xcassets */; };
+		E7A30F04281099BF00000000 /* libMaterial.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29281099BF00000000 /* libMaterial.a */; };
+		E7A30F043A54CFEE00000000 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E293A54CFEE00000000 /* SearchViewController.swift */; };
+		E7A30F044E1BC8CB00000000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E294E1BC8CB00000000 /* AppDelegate.swift */; };
+		E7A30F04884F789700000000 /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29884F789700000000 /* QueueViewController.swift */; };
+		E7A30F04AC9D11D600000000 /* libDwifft.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29AC9D11D600000000 /* libDwifft.a */; };
+		E7A30F04ACEDB17400000000 /* libKingfisher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29ACEDB17400000000 /* libKingfisher.a */; };
+		E7A30F04AE317AA300000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29AE317AA300000000 /* Foundation.framework */; };
+		E7A30F04B20BDA4000000000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E29B20BDA4000000000 /* LaunchScreen.storyboard */; };
+		E7A30F04BF4961CE00000000 /* libMotion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29BF4961CE00000000 /* libMotion.a */; };
+		E7A30F04C2D3B2EF00000000 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29C2D3B2EF00000000 /* LoginViewController.swift */; };
+		E7A30F04C3B9C6B200000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29C3B9C6B200000000 /* UIKit.framework */; };
+		E7A30F04DB843E5600000000 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29DB843E5600000000 /* AppNavigationController.swift */; };
+		E7A30F04FA79206700000000 /* PlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29FA79206700000000 /* PlaylistsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DD70E29001F47FB00000000 /* BUCK */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = BUCK; sourceTree = SOURCE_ROOT; };
+		1DD70E291A8325A500000000 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = QCast/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2920DAE01900000000 /* QCast.xcassets */ = {isa = PBXFileReference; explicitFileType = folder.assetcatalog; name = QCast.xcassets; path = QCast/QCast.xcassets; sourceTree = SOURCE_ROOT; };
+		1DD70E2920DAE01900000001 /* Assets.xcassets */ = {isa = PBXFileReference; explicitFileType = folder.assetcatalog; name = Assets.xcassets; path = ../third_party/Material/Sources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		1DD70E29281099BF00000000 /* libMaterial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMaterial.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E292AD16CE700000000 /* libSpotifyLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSpotifyLogin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E293A54CFEE00000000 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = QCast/Party/SearchViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E293BE1461C00000000 /* QCastDev-Release.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; name = "QCastDev-Release.xcconfig"; path = "../buck-out/gen/ios/QCastDev-Release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		1DD70E294E1BC8CB00000000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = QCast/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E295CF0975000000000 /* QCastDev-Debug.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; name = "QCastDev-Debug.xcconfig"; path = "../buck-out/gen/ios/QCastDev-Debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		1DD70E2963C0977800000000 /* QCastDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = QCastDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E29884F789700000000 /* QueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueueViewController.swift; path = QCast/Party/QueueViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29AC9D11D600000000 /* libDwifft.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDwifft.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E29ACEDB17400000000 /* libKingfisher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libKingfisher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E29AE317AA300000000 /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1DD70E29B20BDA4000000000 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = QCast/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		1DD70E29BF4961CE00000000 /* libMotion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMotion.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD70E29C2D3B2EF00000000 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = QCast/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29C3B9C6B200000000 /* UIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1DD70E29C84A9ABA00000000 /* QCastDev-Profile.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; name = "QCastDev-Profile.xcconfig"; path = "../buck-out/gen/ios/QCastDev-Profile.xcconfig"; sourceTree = SOURCE_ROOT; };
+		1DD70E29DB843E5600000000 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppNavigationController.swift; path = QCast/AppNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29DD746B7800000000 /* QCast-Dev.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; name = "QCast-Dev.plist"; path = "QCast/QCast-Dev.plist"; sourceTree = "<group>"; };
+		1DD70E29FA79206700000000 /* PlaylistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaylistsViewController.swift; path = QCast/Party/PlaylistsViewController.swift; sourceTree = SOURCE_ROOT; };
+		9A1441211FCBF8B0000A23DC /* TrackListTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackListTable.swift; path = QCast/TrackListTable.swift; sourceTree = SOURCE_ROOT; };
+		9A2FF4831FE0C0190000377A /* Libqcast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Libqcast.framework; path = "../buck-out/gen/libqcast/ios-framework/Libqcast.framework"; sourceTree = "<group>"; };
+		9A316EDB1FD3D1550046149F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = QCast/Info.plist; sourceTree = "<group>"; };
+		9A316EDF1FD3D37D0046149F /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Entitlements.plist; path = QCast/Entitlements.plist; sourceTree = "<group>"; };
+		9A3A6A4B1FDC571A00F158B8 /* SpotifyPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpotifyPlayer.swift; path = QCast/SpotifyPlayer.swift; sourceTree = "<group>"; };
+		9A85BCE11FCCA5670063E352 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		9AA249021FCB7B750080F7C2 /* NamePartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NamePartyViewController.swift; path = QCast/Create/NamePartyViewController.swift; sourceTree = SOURCE_ROOT; };
+		9AA249031FCB7B750080F7C2 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationViewController.swift; path = QCast/Create/LocationViewController.swift; sourceTree = SOURCE_ROOT; };
+		9AA249041FCB7B750080F7C2 /* PartyConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartyConfirmViewController.swift; path = QCast/Create/PartyConfirmViewController.swift; sourceTree = SOURCE_ROOT; };
+		9AA249051FCB7B750080F7C2 /* PartyMoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PartyMoodViewController.swift; path = QCast/Create/PartyMoodViewController.swift; sourceTree = SOURCE_ROOT; };
+		9AA2490A1FCB7D570080F7C2 /* QCast-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "QCast-BridgingHeader.h"; path = "QCast/QCast-BridgingHeader.h"; sourceTree = "<group>"; };
+		9AC7FB041FCB626200581657 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = "../third_party/spotify-ios-sdk/SpotifyAudioPlayback.framework"; sourceTree = "<group>"; };
+		9AC7FB051FCB626300581657 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "../third_party/spotify-ios-sdk/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
+		9AF02D961FCE033E007B1830 /* PlaybackSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackSelectViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F426D880000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				E7A30F04AE317AA300000000 /* Foundation.framework in Frameworks */,
+				E7A30F04C3B9C6B200000000 /* UIKit.framework in Frameworks */,
+				E7A30F04AC9D11D600000000 /* libDwifft.a in Frameworks */,
+				E7A30F04ACEDB17400000000 /* libKingfisher.a in Frameworks */,
+				9AC7FB071FCB626300581657 /* SpotifyAuthentication.framework in Frameworks */,
+				E7A30F04BF4961CE00000000 /* libMotion.a in Frameworks */,
+				E7A30F04281099BF00000000 /* libMaterial.a in Frameworks */,
+				9AC7FB061FCB626300581657 /* SpotifyAudioPlayback.framework in Frameworks */,
+				9A2FF4841FE0C01A0000377A /* Libqcast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AB6CCA51FC52A0600419ADA /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				9AA249021FCB7B750080F7C2 /* NamePartyViewController.swift */,
+				9AA249031FCB7B750080F7C2 /* LocationViewController.swift */,
+				9AA249051FCB7B750080F7C2 /* PartyMoodViewController.swift */,
+				9AA249041FCB7B750080F7C2 /* PartyConfirmViewController.swift */,
+			);
+			name = Create;
+			path = QCast/Create;
+			sourceTree = "<group>";
+		};
+		B401C979013EDE0500000000 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E2920DAE01900000000 /* QCast.xcassets */,
+				1DD70E2920DAE01900000001 /* Assets.xcassets */,
+				1DD70E29B20BDA4000000000 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B401C97904952AC600000000 /* Party */ = {
+			isa = PBXGroup;
+			children = (
+				9AF02D961FCE033E007B1830 /* PlaybackSelectViewController.swift */,
+				1DD70E29FA79206700000000 /* PlaylistsViewController.swift */,
+				1DD70E29884F789700000000 /* QueueViewController.swift */,
+				1DD70E293A54CFEE00000000 /* SearchViewController.swift */,
+				9A85BCE11FCCA5670063E352 /* PlaylistViewController.swift */,
+			);
+			name = Party;
+			path = QCast/Party;
+			sourceTree = SOURCE_ROOT;
+		};
+		B401C9792F7F325000000000 /* Buck (Do Not Modify) */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E295CF0975000000000 /* QCastDev-Debug.xcconfig */,
+				1DD70E29C84A9ABA00000000 /* QCastDev-Profile.xcconfig */,
+				1DD70E293BE1461C00000000 /* QCastDev-Release.xcconfig */,
+			);
+			name = "Buck (Do Not Modify)";
+			sourceTree = "<group>";
+		};
+		B401C97962911EC500000000 /* QCastDev */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29001F47FB00000000 /* BUCK */,
+				B401C979013EDE0500000000 /* Resources */,
+				B401C979EAB5339800000000 /* Sources */,
+			);
+			name = QCastDev;
+			sourceTree = "<group>";
+		};
+		B401C97968022A5500000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A2FF4831FE0C0190000377A /* Libqcast.framework */,
+				9AC7FB041FCB626200581657 /* SpotifyAudioPlayback.framework */,
+				9AC7FB051FCB626300581657 /* SpotifyAuthentication.framework */,
+				1DD70E29AE317AA300000000 /* Foundation.framework */,
+				1DD70E29C3B9C6B200000000 /* UIKit.framework */,
+				1DD70E29AC9D11D600000000 /* libDwifft.a */,
+				1DD70E29ACEDB17400000000 /* libKingfisher.a */,
+				1DD70E29281099BF00000000 /* libMaterial.a */,
+				1DD70E29BF4961CE00000000 /* libMotion.a */,
+				1DD70E292AD16CE700000000 /* libSpotifyLogin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B401C979B781F65D00000000 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B401C9792F7F325000000000 /* Buck (Do Not Modify) */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		B401C979C806358400000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E2963C0977800000000 /* QCastDev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B401C979EAB5339800000000 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9A316EDF1FD3D37D0046149F /* Entitlements.plist */,
+				9A316EDB1FD3D1550046149F /* Info.plist */,
+				9AB6CCA51FC52A0600419ADA /* Create */,
+				B401C97904952AC600000000 /* Party */,
+				1DD70E294E1BC8CB00000000 /* AppDelegate.swift */,
+				1DD70E29DB843E5600000000 /* AppNavigationController.swift */,
+				1DD70E291A8325A500000000 /* HomeViewController.swift */,
+				1DD70E29C2D3B2EF00000000 /* LoginViewController.swift */,
+				1DD70E29DD746B7800000000 /* QCast-Dev.plist */,
+				9AA2490A1FCB7D570080F7C2 /* QCast-BridgingHeader.h */,
+				9A1441211FCBF8B0000A23DC /* TrackListTable.swift */,
+				9A3A6A4B1FDC571A00F158B8 /* SpotifyPlayer.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		B401C979EFB6AC4600000000 /* mainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B401C979B781F65D00000000 /* Configurations */,
+				B401C97968022A5500000000 /* Frameworks */,
+				B401C979C806358400000000 /* Products */,
+				B401C97962911EC500000000 /* QCastDev */,
+			);
+			name = mainGroup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E66DC04E62911EC500000000 /* QCastDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 218C37090000000000000000 /* Build configuration list for PBXNativeTarget "QCastDev" */;
+			buildPhases = (
+				9A30CBB91FC8FDA900182709 /* Build libqcast */,
+				1870857F0000000000000000 /* Sources */,
+				4F426D880000000000000000 /* Frameworks */,
+				8A032D2C0000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QCastDev;
+			productName = QCastDev;
+			productReference = 1DD70E2963C0977800000000 /* QCastDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C847930001980D00000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					E66DC04E62911EC500000000 = {
+						DevelopmentTeam = 2DAZ3V2PJG;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 218C37090000000000000001 /* Build configuration list for PBXProject "ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B401C979EFB6AC4600000000 /* mainGroup */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E66DC04E62911EC500000000 /* QCastDev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A032D2C0000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				9A316EDC1FD3D1560046149F /* Info.plist in Resources */,
+				E7A30F04B20BDA4000000000 /* LaunchScreen.storyboard in Resources */,
+				E7A30F0420DAE01900000000 /* QCast.xcassets in Resources */,
+				9A316EE01FD3D37D0046149F /* Entitlements.plist in Resources */,
+				E7A30F0420DAE01900000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A30CBB91FC8FDA900182709 /* Build libqcast */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build libqcast";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /usr/local/bin/fish;
+			shellScript = "cd ..\nbuck build libqcast:ios-framework";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1870857F0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				9AA249061FCB7B760080F7C2 /* NamePartyViewController.swift in Sources */,
+				E7A30F04FA79206700000000 /* PlaylistsViewController.swift in Sources */,
+				9AA249081FCB7B760080F7C2 /* PartyConfirmViewController.swift in Sources */,
+				E7A30F04884F789700000000 /* QueueViewController.swift in Sources */,
+				9A85BCE21FCCA5670063E352 /* PlaylistViewController.swift in Sources */,
+				E7A30F043A54CFEE00000000 /* SearchViewController.swift in Sources */,
+				E7A30F044E1BC8CB00000000 /* AppDelegate.swift in Sources */,
+				9A3A6A4C1FDC571A00F158B8 /* SpotifyPlayer.swift in Sources */,
+				9AF02D971FCE033E007B1830 /* PlaybackSelectViewController.swift in Sources */,
+				E7A30F04DB843E5600000000 /* AppNavigationController.swift in Sources */,
+				9AA249091FCB7B760080F7C2 /* PartyMoodViewController.swift in Sources */,
+				9A1441221FCBF8B0000A23DC /* TrackListTable.swift in Sources */,
+				9AA249071FCB7B760080F7C2 /* LocationViewController.swift in Sources */,
+				E7A30F041A8325A500000000 /* HomeViewController.swift in Sources */,
+				E7A30F04C2D3B2EF00000000 /* LoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4952437303EDA63300000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD70E295CF0975000000000 /* QCastDev-Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 2DAZ3V2PJG;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					$SRCROOT,
+					"$SRCROOT/../third_party/spotify-ios-sdk/**",
+					"$SRCROOT/../buck-out/gen/libqcast/ios-framework/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/QCast/QCast-Dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qcastapp.ios.dev;
+				PRODUCT_NAME = QCastDev;
+				PROVISIONING_PROFILE = "c635b94a-f33b-4c59-bdba-530d7a05f74f";
+				PROVISIONING_PROFILE_SPECIFIER = "QCast Dev";
+				SDKROOT = iphoneos;
+				STRIP_SWIFT_SYMBOLS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "QCast/QCast-BridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		4952437303EDA63300000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+			};
+			name = Debug;
+		};
+		4952437350C7218900000000 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD70E29C84A9ABA00000000 /* QCastDev-Profile.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					$SRCROOT,
+					"$SRCROOT/../third_party/spotify-ios-sdk/**",
+					"$SRCROOT/../buck-out/gen/libqcast/ios-framework/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/QCast/QCast-Dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qcastapp.ios.dev;
+				PRODUCT_NAME = QCastDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				STRIP_SWIFT_SYMBOLS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "QCast/QCast-BridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Profile;
+		};
+		4952437350C7218900000001 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+			};
+			name = Profile;
+		};
+		49524373A439BFE700000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD70E293BE1461C00000000 /* QCastDev-Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					$SRCROOT,
+					"$SRCROOT/../third_party/spotify-ios-sdk/**",
+					"$SRCROOT/../buck-out/gen/libqcast/ios-framework/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/QCast/QCast-Dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qcastapp.ios.dev;
+				PRODUCT_NAME = QCastDev;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				STRIP_SWIFT_SYMBOLS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "QCast/QCast-BridgingHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		49524373A439BFE700000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		218C37090000000000000000 /* Build configuration list for PBXNativeTarget "QCastDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437303EDA63300000000 /* Debug */,
+				4952437350C7218900000000 /* Profile */,
+				49524373A439BFE700000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		218C37090000000000000001 /* Build configuration list for PBXProject "ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437303EDA63300000001 /* Debug */,
+				4952437350C7218900000001 /* Profile */,
+				49524373A439BFE700000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C847930001980D00000000 /* Project object */;
+}

@@ -1,0 +1,16 @@
+go_library(
+  name = 'context',
+  package_name = 'golang.org/x/net/context',
+  srcs = ['context.go', 'go17.go', 'go19.go'],
+  visibility = ['PUBLIC'],
+)
+
+go_library(
+  name = 'ctxhttp',
+  package_name = 'golang.org/x/net/context/ctxhttp',
+  srcs = ['ctxhttp/ctxhttp.go'],
+  deps = [
+    '//third_party/golang.org/x/net/context:context',
+  ],
+  visibility = ['PUBLIC'],
+)

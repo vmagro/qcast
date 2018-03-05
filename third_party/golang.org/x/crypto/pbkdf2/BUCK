@@ -1,0 +1,6 @@
+go_library(
+  name='pbkdf2',
+  package_name='golang.org/x/crypto/pbkdf2',
+  srcs=['pbkdf2.go'],
+  visibility=['PUBLIC'],
+)
